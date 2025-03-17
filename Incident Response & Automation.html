@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title">Incident Response & Automation</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="AI Logo" />
+          <span data-i18n="logo_text">AI into cybersecurity</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="App.html" data-i18n="nav_applications">Applications</a></li>
+          <li><a href="Risks.html" data-i18n="nav_risks">Risks</a></li>
+          <li><a href="About_us.html" data-i18n="nav_about">About us</a></li>
+          <li>
+            <a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Go to chatGPT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 data-i18n="page_title">Incident Response & Automation</h1>
+      <p data-i18n="para1">
+        As cyber threats increase in complexity and speed, organizations
+        cannot afford delays when responding to a potential breach. Traditional
+        incident response protocols often involve a flurry of manual tasks—ranging
+        from diagnosing the threat’s scope to patching compromised systems—which 
+        can be both time-consuming and prone to human error. That’s where AI-based
+        incident response steps in. By automating crucial processes, these systems
+        significantly compress reaction times, thereby limiting damage and reducing
+        the costs associated with remediation. The faster a network can isolate 
+        infected endpoints and halt malicious activities, the harder it is for 
+        attackers to spread laterally or exfiltrate sensitive information.
+      </p>
+      <p data-i18n="para2">
+        AI-driven automation in incident response typically relies on advanced 
+        playbooks and real-time analytics. When a threat is detected—be it malware,
+        a suspicious login, or anomalous network behavior—the system can execute 
+        predefined containment measures such as isolating affected devices or even 
+        blocking specific IP addresses. Similarly, patches or software updates can 
+        be pushed automatically to vulnerable endpoints without waiting for manual
+        administrator intervention. This streamlined approach not only saves valuable
+        time but also ensures that critical actions are taken consistently, regardless
+        of external factors like staff availability or human fatigue. By centralizing
+        and automating these steps, security teams are better positioned to stop 
+        threats in their tracks before they escalate into larger crises.
+      </p>
+      <img src="images/Incident-Response-&-Automation1.png" alt="Automated Incident Response" />
+      <p data-i18n="para3">
+        That said, a well-rounded incident response strategy still depends on human
+        expertise for oversight and sophisticated decision-making. AI can orchestrate 
+        a lightning-fast containment process, but experts are needed to analyze post-incident data,
+        fine-tune automated workflows, and ensure that security measures align with 
+        business objectives and regulatory requirements. Overreliance on automation 
+        can lead to missed contextual details or even disruptive false positives. By
+        combining AI’s speed and efficiency with human judgment and strategic insight,
+        organizations create a resilient defense posture that not only repels active 
+        threats but also learns from each incident to continually improve their security
+        framework.
+      </p>
+      <img src="images/Incident-Response-&-Automation.png" alt="Incident Response Illustration" />
+    </main>
+    <footer>
+      <section class="items-wrap">
+        <section class="links-wrap">
+          <a href="https://github.com/Ivana390/AI-into-cybersecurity">
+            <img src="images/git-logo.png" alt="GitHub" />
+          </a>
+          <a href="https://discord.com/channels/@me">
+            <img src="images/discord.png" alt="Discord" />
+          </a>
+        </section>
+        <section class="links-wrap">
+          <h3 data-i18n="terms_of_use">TERMS OF USE</h3>
+          <h3 data-i18n="privacy_policy">PRIVACY POLICY</h3>
+          <h3 data-i18n="site_map">SITE MAP</h3>
+        </section>
+        <section class="links-wrap">
+          <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')"/>
+          <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')"/>
+          <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')"/>
+        </section>
+      </section>
+      <h4 data-i18n="copyright">
+        Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.
+      </h4>
+    </footer>
+    <script>
+      const translations = {
+        en: {
+          page_title: "Incident Response & Automation",
+          nav_home: "Home",
+          nav_applications: "Applications",
+          nav_risks: "Risks",
+          nav_about: "About us",
+          nav_chatgpt: "Go to chatGPT",
+          logo_text: "AI into cybersecurity",
+          para1:
+            "As cyber threats increase in complexity and speed, organizations cannot afford delays when responding to a potential breach. Traditional incident response protocols often involve a flurry of manual tasks—ranging from diagnosing the threat’s scope to patching compromised systems—which can be both time-consuming and prone to human error. That’s where AI-based incident response steps in. By automating crucial processes, these systems significantly compress reaction times, thereby limiting damage and reducing the costs associated with remediation. The faster a network can isolate infected endpoints and halt malicious activities, the harder it is for attackers to spread laterally or exfiltrate sensitive information.",
+          para2:
+            "AI-driven automation in incident response typically relies on advanced playbooks and real-time analytics. When a threat is detected—be it malware, a suspicious login, or anomalous network behavior—the system can execute predefined containment measures such as isolating affected devices or even blocking specific IP addresses. Similarly, patches or software updates can be pushed automatically to vulnerable endpoints without waiting for manual administrator intervention. This streamlined approach not only saves valuable time but also ensures that critical actions are taken consistently, regardless of external factors like staff availability or human fatigue. By centralizing and automating these steps, security teams are better positioned to stop threats in their tracks before they escalate into larger crises.",
+          para3:
+            "That said, a well-rounded incident response strategy still depends on human expertise for oversight and sophisticated decision-making. AI can orchestrate a lightning-fast containment process, but experts are needed to analyze post-incident data, fine-tune automated workflows, and ensure that security measures align with business objectives and regulatory requirements. Overreliance on automation can lead to missed contextual details or even disruptive false positives. By combining AI’s speed and efficiency with human judgment and strategic insight, organizations create a resilient defense posture that not only repels active threats but also learns from each incident to continually improve their security framework.",
+          terms_of_use: "TERMS OF USE",
+          privacy_policy: "PRIVACY POLICY",
+          site_map: "SITE MAP",
+          copyright:
+            "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved."
+        },
+        bg: {
+          page_title: "Отговор на инциденти и автоматизация",
+          nav_home: "Начало",
+          nav_applications: "Приложения",
+          nav_risks: "Рискове",
+          nav_about: "За нас",
+          nav_chatgpt: "Отиди към chatGPT",
+          logo_text: "Изкуствен интелект в киберсигурността",
+          para1:
+            "С увеличаването на сложността и скоростта на киберзаплахите, организациите не могат да си позволят забавяне при отговора на потенциална пробив. Традиционните протоколи за реакция при инциденти често включват множество ръчни задачи – от диагностициране на обхвата на заплахата до оправяне на компрометирани системи – които могат да отнемат време и да бъдат податливи на човешки грешки. Тук влизат в сила AI-базираните системи за отговор на инциденти. Чрез автоматизиране на ключови процеси, тези системи значително намаляват времето за реакция, като по този начин ограничават щетите и намаляват разходите за възстановяване. Колкото по-бързо мрежата може да изолира заразените крайни точки и да спре зловредната дейност, толкова по-трудно е за нападателите да се разпространяват или да изнасят чувствителна информация.",
+          para2:
+            "AI-базираната автоматизация в отговора на инциденти обикновено се основава на напреднали плейбукове и анализ в реално време. Когато бъде засечена заплаха – независимо дали става въпрос за зловреден софтуер, подозрително влизане или аномално мрежово поведение – системата може да изпълни предварително зададени мерки за ограничаване, като изолира засегнатите устройства или дори блокира определени IP адреси. По същия начин, пачове или софтуерни актуализации могат да бъдат автоматично изпращани към уязвими крайни точки, без да се налага ръчна намеса от страна на администратор. Този оптимизиран подход не само пести ценно време, но и гарантира, че критичните мерки се предприемат последователно, независимо от фактори като наличността на персонала или човешката умора. Чрез централизация и автоматизация на тези стъпки, екипите по сигурност са по-добре подготвени да спрат заплахите, преди те да ескалират в по-големи кризи.",
+          para3:
+            "Въпреки това, добре балансираната стратегия за отговор на инциденти все още зависи от човешката експертиза за надзор и вземане на сложни решения. AI може да осъществи изключително бърз процес на ограничаване, но за анализа на данните след инцидента, оптимизация на автоматизираните потоци и осигуряване, че мерките за сигурност отговарят на бизнес целите и регулаторните изисквания, са необходими експерти. Прекомерната зависимост от автоматизацията може да доведе до пропускане на контекстуални детайли или дори до нарушение, предизвикано от фалшиви аларми. Чрез съчетаването на скоростта и ефективността на AI с човешката прецизност и стратегическо виждане, организациите изграждат устойчива защитна позиция, която не само отблъсква активните заплахи, но и се учи от всеки инцидент, за да подобри постоянно своята сигурност.",
+          terms_of_use: "Условия за ползване",
+          privacy_policy: "Политика за поверителност",
+          site_map: "Карта на сайта",
+          copyright:
+            "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
+        },
+        de: {
+          page_title: "Reaktion auf Vorfälle & Automatisierung",
+          nav_home: "Startseite",
+          nav_applications: "Anwendungen",
+          nav_risks: "Risiken",
+          nav_about: "Über uns",
+          nav_chatgpt: "Zu chatGPT gehen",
+          logo_text: "KI in der Cybersicherheit",
+          para1:
+            "Da Cyberbedrohungen in Komplexität und Geschwindigkeit zunehmen, können sich Organisationen keine Verzögerungen bei der Reaktion auf einen potenziellen Sicherheitsvorfall leisten. Traditionelle Protokolle zur Vorfallsreaktion beinhalten oft eine Vielzahl manueller Aufgaben – von der Diagnose des Bedrohungsumfangs bis hin zur Behebung kompromittierter Systeme –, die sowohl zeitaufwendig als auch anfällig für menschliche Fehler sind. Hier kommt die KI-gestützte Vorfallsreaktion ins Spiel. Durch die Automatisierung kritischer Prozesse verkürzen diese Systeme die Reaktionszeiten erheblich, wodurch Schäden begrenzt und die Kosten für die Behebung reduziert werden. Je schneller ein Netzwerk infizierte Endpunkte isolieren und bösartige Aktivitäten stoppen kann, desto schwieriger wird es für Angreifer, sich seitlich im Netzwerk zu bewegen oder sensible Informationen zu exfiltrieren.",
+          para2:
+            "Die KI-gesteuerte Automatisierung in der Vorfallsreaktion beruht typischerweise auf fortschrittlichen Playbooks und Echtzeitanalysen. Sobald eine Bedrohung erkannt wird – sei es Malware, ein verdächtiger Login oder anomales Netzwerkverhalten – kann das System vordefinierte Eindämmungsmaßnahmen ausführen, wie etwa die Isolierung betroffener Geräte oder sogar das Blockieren bestimmter IP-Adressen. Ebenso können Patches oder Software-Updates automatisch an verwundbare Endpunkte verteilt werden, ohne dass ein manueller Eingriff durch Administratoren erforderlich ist. Dieser optimierte Ansatz spart nicht nur wertvolle Zeit, sondern stellt auch sicher, dass kritische Maßnahmen konsequent ergriffen werden, unabhängig von Faktoren wie der Verfügbarkeit des Personals oder menschlicher Ermüdung. Durch die Zentralisierung und Automatisierung dieser Schritte sind Sicherheitsteams besser in der Lage, Bedrohungen zu stoppen, bevor sie sich zu größeren Krisen entwickeln.",
+          para3:
+            "Dennoch bleibt eine ganzheitliche Vorfallsreaktionsstrategie von der menschlichen Expertise abhängig, um die Überwachung und komplexe Entscheidungsfindung sicherzustellen. KI kann einen blitzschnellen Eindämmungsprozess orchestrieren, aber Experten sind erforderlich, um Daten nach einem Vorfall zu analysieren, automatisierte Workflows zu optimieren und sicherzustellen, dass Sicherheitsmaßnahmen mit den Geschäftszielen und regulatorischen Anforderungen in Einklang stehen. Eine übermäßige Abhängigkeit von der Automatisierung kann dazu führen, dass kontextuelle Details übersehen oder störende Fehlalarme ausgelöst werden. Durch die Kombination der Geschwindigkeit und Effizienz von KI mit menschlichem Urteilsvermögen und strategischem Weitblick schaffen Organisationen eine widerstandsfähige Verteidigungsstrategie, die nicht nur aktive Bedrohungen abwehrt, sondern auch aus jedem Vorfall lernt, um ihre Sicherheitsarchitektur kontinuierlich zu verbessern.",
+          terms_of_use: "Nutzungsbedingungen",
+          privacy_policy: "Datenschutzrichtlinie",
+          site_map: "Seitenübersicht",
+          copyright:
+            "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
+        }
+      };
+      function switchLanguage(lang) {
+        const elements = document.querySelectorAll("[data-i18n]");
+        elements.forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
+        });
+        document.title = translations[lang].page_title;
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("footer-lang-en")
+          .addEventListener("click", () => switchLanguage("en"));
+        document
+          .getElementById("footer-lang-bg")
+          .addEventListener("click", () => switchLanguage("bg"));
+        document
+          .getElementById("footer-lang-de")
+          .addEventListener("click", () => switchLanguage("de"));
+    
+        switchLanguage("en");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title">Detection & Analysis</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="AI Logo" />
+          <span data-i18n="logo_text">AI into cybersecurity</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="App.html" data-i18n="nav_applications">Applications</a></li>
+          <li><a href="Risks.html" data-i18n="nav_risks">Risks</a></li>
+          <li><a href="About_us.html" data-i18n="nav_about">About us</a></li>
+          <li>
+            <a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Go to chatGPT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 data-i18n="page_title">Detection & Analysis</h1>
+      <p data-i18n="para1">
+        The rapid evolution of cyber threats—from targeted ransomware campaigns
+        to sophisticated zero-day exploits—demands a more dynamic and intelligent
+        defense strategy than traditional, rule-based systems can offer. In this
+        context, AI has emerged as a game-changer, particularly when it comes to
+        real-time threat detection and analysis. By leveraging machine learning
+        models trained on vast datasets—ranging from historical attack signatures
+        to evolving malware behaviors—AI-powered systems can continuously monitor
+        networks, endpoints, and user activities. This real-time surveillance not
+        only identifies potential dangers based on known threats but also detects
+        subtle, previously unseen anomalies that hint at brand-new attack vectors.
+        Such adaptability provides a crucial layer of protection in a landscape where
+        attackers routinely change their methods to circumvent static defenses.
+      </p>
+      <img src="images/detection-and-analysis.png" alt="Detection & Analysis" />
+      <p data-i18n="para2">
+        Fundamentally, AI-driven detection tools excel at processing and correlating
+        large volumes of data at unprecedented speed. They sift through logs, user
+        activities, network packets, and system events, flagging unusual patterns like
+        spikes in data transfers or suspicious login attempts. This level of analysis
+        is often coupled with advanced algorithms such as deep learning or anomaly
+        detection, enabling security teams to uncover hidden indicators of compromise
+        that might remain invisible under manual scrutiny. Moreover, many AI systems
+        incorporate threat intelligence feeds to cross-reference emerging malicious domains,
+        IP addresses, and file hashes. By synthesizing these intelligence inputs in real time,
+        AI-based platforms can provide a proactive approach to security—alerting
+        defenders before malicious code spreads through the network or sensitive data is exfiltrated.
+      </p>
+      <img src="images/detection-and-analysis1.png" alt="Detection & Analysis" />
+      <p data-i18n="para3">
+        Yet, even the most advanced AI models should be part of a broader, layered
+        security strategy. Human expertise remains indispensable for interpreting
+        AI alerts, performing in-depth investigations, and making nuanced decisions
+        about containment or remediation. Regular audits, governance policies, and
+        comprehensive training further reinforce the reliability of AI-driven solutions,
+        preventing potential pitfalls such as algorithmic bias or overreliance on
+        automation. As cyber threats continue to morph in complexity, the fusion of
+        human intelligence and AI’s capacity for real-time data analysis forms the
+        strongest bulwark against both everyday threats and high-stakes, targeted
+        attacks. By integrating AI tools thoughtfully into the overall cybersecurity
+        framework, organizations can stay ahead of evolving hazards, safeguard
+        critical data, and uphold the trust of stakeholders and customers alike.
+      </p>
+    </main>
+    <footer>
+      <section class="items-wrap">
+        <section class="links-wrap">
+          <a href="https://github.com/Ivana390/AI-into-cybersecurity">
+            <img src="images/git-logo.png" alt="GitHub" />
+          </a>
+          <a href="https://discord.com/channels/@me">
+            <img src="images/discord.png" alt="Discord" />
+          </a>
+        </section>
+        <section class="links-wrap">
+          <h3 data-i18n="terms_of_use">TERMS OF USE</h3>
+          <h3 data-i18n="privacy_policy">PRIVACY POLICY</h3>
+          <h3 data-i18n="site_map">SITE MAP</h3>
+        </section>
+        <section class="links-wrap">
+          <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')"/>
+          <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')"/>
+          <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')"/>
+        </section>
+      </section>
+      <h4 data-i18n="copyright">
+        Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.
+      </h4>
+    </footer>
+    <script>
+      const translations = {
+        en: {
+          page_title: "Detection & Analysis",
+          nav_home: "Home",
+          nav_applications: "Applications",
+          nav_risks: "Risks",
+          nav_about: "About us",
+          nav_chatgpt: "Go to chatGPT",
+          logo_text: "AI into cybersecurity",
+          para1:
+            "The rapid evolution of cyber threats—from targeted ransomware campaigns to sophisticated zero-day exploits—demands a more dynamic and intelligent defense strategy than traditional, rule-based systems can offer. In this context, AI has emerged as a game-changer, particularly when it comes to real-time threat detection and analysis. By leveraging machine learning models trained on vast datasets—ranging from historical attack signatures to evolving malware behaviors—AI-powered systems can continuously monitor networks, endpoints, and user activities. This real-time surveillance not only identifies potential dangers based on known threats but also detects subtle, previously unseen anomalies that hint at brand-new attack vectors. Such adaptability provides a crucial layer of protection in a landscape where attackers routinely change their methods to circumvent static defenses.",
+          para2:
+            "Fundamentally, AI-driven detection tools excel at processing and correlating large volumes of data at unprecedented speed. They sift through logs, user activities, network packets, and system events, flagging unusual patterns like spikes in data transfers or suspicious login attempts. This level of analysis is often coupled with advanced algorithms such as deep learning or anomaly detection, enabling security teams to uncover hidden indicators of compromise that might remain invisible under manual scrutiny. Moreover, many AI systems incorporate threat intelligence feeds to cross-reference emerging malicious domains, IP addresses, and file hashes. By synthesizing these intelligence inputs in real time, AI-based platforms can provide a proactive approach to security—alerting defenders before malicious code spreads through the network or sensitive data is exfiltrated.",
+          para3:
+            "Yet, even the most advanced AI models should be part of a broader, layered security strategy. Human expertise remains indispensable for interpreting AI alerts, performing in-depth investigations, and making nuanced decisions about containment or remediation. Regular audits, governance policies, and comprehensive training further reinforce the reliability of AI-driven solutions, preventing potential pitfalls such as algorithmic bias or overreliance on automation. As cyber threats continue to morph in complexity, the fusion of human intelligence and AI’s capacity for real-time data analysis forms the strongest bulwark against both everyday threats and high-stakes, targeted attacks. By integrating AI tools thoughtfully into the overall cybersecurity framework, organizations can stay ahead of evolving hazards, safeguard critical data, and uphold the trust of stakeholders and customers alike.",
+          terms_of_use: "TERMS OF USE",
+          privacy_policy: "PRIVACY POLICY",
+          site_map: "SITE MAP",
+          copyright:
+            "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved."
+        },
+        bg: {
+          page_title: "Откриване и анализ",
+          nav_home: "Начало",
+          nav_applications: "Приложения",
+          nav_risks: "Рискове",
+          nav_about: "За нас",
+          nav_chatgpt: "Отиди към chatGPT",
+          logo_text: "Изкуствен интелект в киберсигурността",
+          para1:
+            "Бързата еволюция на киберзаплахите – от насочени кампании за изнудване до сложни експлойтове с нулев ден – изисква по-динамична и интелигентна стратегия за отбрана, отколкото традиционните, базирани на правила системи могат да предложат. В този контекст, изкуственият интелект се превърна във важен фактор, особено когато става въпрос за откриване и анализ в реално време. Чрез използване на модели за машинно обучение, обучени върху обширни набори от данни – от исторически подписки на атаки до еволюиращи поведения на зловреден софтуер – AI-базираните системи могат непрекъснато да наблюдават мрежите, крайните точки и потребителските дейности. Това наблюдение в реално време не само идентифицира потенциални опасности, базирани на познати заплахи, но и открива финни, досега незабелязани аномалии, които подсказват за напълно нови вектори на атака. Такава адаптивност осигурява ключов слой защита в обстановка, в която атакуващите постоянно променят методите си, за да заобиколят статичните системи за отбрана.",
+          para2:
+            "В основата си, инструментите за откриване, управлявани от AI, се отличават с обработката и корелирането на големи обеми данни със безпрецедентна скорост. Те анализират логове, потребителски дейности, мрежови пакети и системни събития, като маркират необичайни модели – като рязко увеличение на трансферите на данни или подозрителни опити за влизане. Това ниво на анализ често се комбинира с напреднали алгоритми като дълбоко обучение или откриване на аномалии, което позволява на екипите по сигурност да откриват скрити индикатори за компрометиране, които може да останат невидими при ръчен преглед. Освен това, много AI системи включват източници на разузнаване, за да проверят нововъзникващи злонамерени домейни, IP адреси и файлови хешове. Чрез синтезиране на тези данни в реално време, AI-базираните платформи могат да предоставят проактивен подход към сигурността – предупреждавайки защитниците, преди зловредният код да се разпространи в мрежата или чувствителните данни да бъдат изнесени.",
+          para3:
+            "Въпреки това, дори най-напредналите AI модели трябва да бъдат част от по-широка, многостепенна стратегия за сигурност. Човешката експертиза остава незаменима при тълкуването на AI предупреждения, извършването на задълбочени разследвания и вземането на нюансирани решения за ограничаване или възстановяване. Редовните одити, политиките за управление и цялостното обучение допълнително засилват надеждността на AI-базираните решения, предотвратявайки потенциални проблеми като алгоритмична пристрастност или прекомерна зависимост от автоматизацията. Тъй като киберзаплахите продължават да се усложняват, сливането на човешката интелигенция и капацитета на AI за анализ на данни в реално време формира най-силната защита както срещу ежедневни заплахи, така и срещу високорискови, насочени атаки. Чрез внимателна интеграция на AI инструментите в рамките на киберсигурността, организациите могат да останат една крачка пред променящите се опасности, да защитят критичните данни и да запазят доверието на заинтересованите страни и клиентите.",
+          terms_of_use: "Условия за ползване",
+          privacy_policy: "Политика за поверителност",
+          site_map: "Карта на сайта",
+          copyright:
+            "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
+        },
+        de: {
+          page_title: "Erkennung & Analyse",
+          nav_home: "Startseite",
+          nav_applications: "Anwendungen",
+          nav_risks: "Risiken",
+          nav_about: "Über uns",
+          nav_chatgpt: "Zu chatGPT gehen",
+          logo_text: "KI in der Cybersicherheit",
+          para1:
+            "Die rasante Entwicklung von Cyberbedrohungen – von gezielten Ransomware-Kampagnen bis hin zu ausgeklügelten Zero-Day-Exploits – erfordert eine dynamischere und intelligentere Verteidigungsstrategie, als es traditionelle, regelbasierte Systeme bieten können. In diesem Zusammenhang hat sich KI als bahnbrechend erwiesen, insbesondere wenn es um die Echtzeit-Erkennung und -Analyse von Bedrohungen geht. Durch den Einsatz von maschinellen Lernmodellen, die auf umfangreichen Datensätzen trainiert wurden – von historischen Angriffssignaturen bis hin zu sich entwickelnden Malware-Verhalten – können KI-basierte Systeme kontinuierlich Netzwerke, Endpunkte und Benutzeraktivitäten überwachen. Diese Echtzeitüberwachung identifiziert nicht nur potenzielle Gefahren auf Basis bekannter Bedrohungen, sondern erkennt auch subtile, bisher ungesehene Anomalien, die auf völlig neue Angriffsvektoren hinweisen. Diese Anpassungsfähigkeit bietet einen entscheidenden Schutz in einem Umfeld, in dem Angreifer ständig ihre Methoden ändern, um statische Abwehrmechanismen zu umgehen.",
+          para2:
+            "Im Wesentlichen zeichnen sich KI-gesteuerte Erkennungstools durch die Verarbeitung und Korrelation großer Datenmengen mit beispielloser Geschwindigkeit aus. Sie durchforsten Protokolle, Benutzeraktivitäten, Netzwerkpakete und Systemereignisse und heben ungewöhnliche Muster hervor, wie etwa plötzliche Anstiege im Datentransfer oder verdächtige Login-Versuche. Dieses Analyselevel wird oft mit fortschrittlichen Algorithmen wie Deep Learning oder Anomalieerkennung kombiniert, was es Sicherheitsteams ermöglicht, versteckte Indikatoren für Kompromittierungen aufzudecken, die bei manueller Überprüfung unentdeckt bleiben könnten. Darüber hinaus integrieren viele KI-Systeme Threat-Intelligence-Feeds, um aufkommende bösartige Domains, IP-Adressen und Dateihashes zu verifizieren. Durch die Synthese dieser Informationen in Echtzeit können KI-basierte Plattformen einen proaktiven Sicherheitsansatz bieten – sie warnen Verteidiger, bevor bösartiger Code im Netzwerk verbreitet wird oder sensible Daten exfiltriert werden.",
+          para3:
+            "Dennoch sollten selbst die fortschrittlichsten KI-Modelle Teil einer breiteren, mehrschichtigen Sicherheitsstrategie sein. Menschliche Expertise bleibt unverzichtbar, um KI-Warnungen zu interpretieren, tiefgehende Untersuchungen durchzuführen und differenzierte Entscheidungen über Eindämmung oder Behebung zu treffen. Regelmäßige Audits, Governance-Richtlinien und umfassende Schulungen verstärken zusätzlich die Zuverlässigkeit von KI-Lösungen und verhindern potenzielle Fallstricke wie algorithmische Verzerrungen oder eine übermäßige Abhängigkeit von Automatisierung. Da Cyberbedrohungen zunehmend komplexer werden, bildet die Verschmelzung von menschlicher Intelligenz und der Fähigkeit von KI zur Echtzeit-Datenanalyse die stärkste Verteidigungslinie gegen alltägliche Bedrohungen sowie hochriskante, gezielte Angriffe. Durch die durchdachte Integration von KI-Tools in das gesamte Cybersicherheitsframework können Organisationen den sich entwickelnden Gefahren einen Schritt voraus sein, kritische Daten schützen und das Vertrauen von Stakeholdern und Kunden wahren.",
+          terms_of_use: "Nutzungsbedingungen",
+          privacy_policy: "Datenschutzrichtlinie",
+          site_map: "Seitenübersicht",
+          copyright:
+            "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
+        }
+      };
+      function switchLanguage(lang) {
+        const elements = document.querySelectorAll("[data-i18n]");
+        elements.forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
+        });
+        document.title = translations[lang].page_title;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("footer-lang-en")
+          .addEventListener("click", () => switchLanguage("en"));
+        document
+          .getElementById("footer-lang-bg")
+          .addEventListener("click", () => switchLanguage("bg"));
+        document
+          .getElementById("footer-lang-de")
+          .addEventListener("click", () => switchLanguage("de"));
+        switchLanguage("en");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page_title">Vulnerability Assessment</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="./js/languageSwitcher.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="AI Logo" />
+        <span data-i18n="logo_text">AI into cybersecurity</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="App.html" data-i18n="nav_applications">Applications</a></li>
+        <li><a href="Risks.html" data-i18n="nav_risks">Risks</a></li>
+        <li><a href="About_us.html" data-i18n="nav_about">About us</a></li>
+        <li>
+          <a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Go to chatGPT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 data-i18n="page_title">Vulnerability Assessment</h1>
+    <img src="images/Vulnerability-Assessment.png" alt="Vulnerability Assessment Image" />
+    <p data-i18n="para1">
+      In the ever-evolving world of cybersecurity, staying one step ahead of attackers means continually looking for and addressing potential weak spots. This is where AI-driven vulnerability assessment shines. Instead of relying solely on manual scans or occasional audits, AI tools run continuously, keeping a watchful eye on operating systems, applications, and network configurations. They look for unpatched software, misconfigurations, and other systemic flaws that cybercriminals often exploit. By automating this once labor-intensive task, organizations can maintain an up-to-date security profile without overwhelming human resources.
+    </p>
+    <p data-i18n="para2">
+      What truly sets AI-powered vulnerability scanners apart is their ability to prioritize risks. These platforms cross-reference a variety of data—from known exploit databases to real-world breach trends—to determine which vulnerabilities pose the greatest threat. For instance, they can identify a critical software gap that’s actively targeted by malware campaigns, highlighting it as a top priority for immediate patching. This intelligence-driven approach ensures that teams focus on the issues most likely to be exploited, optimizing both time and resources. As a result, even smaller security teams can manage large infrastructures more effectively.
+    </p>
+    <img src="images/Vulnerability-Assessment1.png" alt="Vulnerability Assessment Detail" />
+    <p data-i18n="para3">
+      Of course, automation and AI do not eliminate the need for human oversight. Security professionals play a vital role in validating AI findings, applying nuanced judgment to remediation strategies, and ensuring that any fixes align with broader organizational goals. Nevertheless, by reducing guesswork and manual effort, AI-driven vulnerability assessment significantly bolsters an organization’s defensive posture. With continuous scanning and smart prioritization, security teams can tackle the most pressing threats first, ultimately creating a more robust and resilient environment against cyberattacks.
+    </p>
+  </main>
+  <footer>
+    <section class="items-wrap">
+      <section class="links-wrap">
+        <a href="https://github.com/Ivana390/AI-into-cybersecurity">
+          <img src="images/git-logo.png" alt="GitHub" />
+        </a>
+        <a href="https://discord.com/channels/@me">
+          <img src="images/discord.png" alt="Discord" />
+        </a>
+      </section>
+      <section class="links-wrap">
+        <h3 data-i18n="terms_of_use">TERMS OF USE</h3>
+        <h3 data-i18n="privacy_policy">PRIVACY POLICY</h3>
+        <h3 data-i18n="site_map">SITE MAP</h3>
+      </section>
+      <section class="links-wrap">
+        <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')" />
+        <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')" />
+        <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')" />
+      </section>
+    </section>
+    <h4 data-i18n="copyright">
+      Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.
+    </h4>
+  </footer>
+  // Речник с преводи за английски (en), български (bg) и немски (de)
+  <script>
+const translations = {
+  en: {
+    page_title: "Vulnerability Assessment",
+    logo_text: "AI into cybersecurity",
+    nav_home: "Home",
+    nav_applications: "Applications",
+    nav_risks: "Risks",
+    nav_about: "About us",
+    nav_chatgpt: "Go to chatGPT",
+    para1: "In the ever-evolving world of cybersecurity, staying one step ahead of attackers means continually looking for and addressing potential weak spots. This is where AI-driven vulnerability assessment shines. Instead of relying solely on manual scans or occasional audits, AI tools run continuously, keeping a watchful eye on operating systems, applications, and network configurations. They look for unpatched software, misconfigurations, and other systemic flaws that cybercriminals often exploit. By automating this once labor-intensive task, organizations can maintain an up-to-date security profile without overwhelming human resources.",
+    para2: "What truly sets AI-powered vulnerability scanners apart is their ability to prioritize risks. These platforms cross-reference a variety of data—from known exploit databases to real-world breach trends—to determine which vulnerabilities pose the greatest threat. For instance, they can identify a critical software gap that’s actively targeted by malware campaigns, highlighting it as a top priority for immediate patching. This intelligence-driven approach ensures that teams focus on the issues most likely to be exploited, optimizing both time and resources. As a result, even smaller security teams can manage large infrastructures more effectively.",
+    para3: "Of course, automation and AI do not eliminate the need for human oversight. Security professionals play a vital role in validating AI findings, applying nuanced judgment to remediation strategies, and ensuring that any fixes align with broader organizational goals. Nevertheless, by reducing guesswork and manual effort, AI-driven vulnerability assessment significantly bolsters an organization’s defensive posture. With continuous scanning and smart prioritization, security teams can tackle the most pressing threats first, ultimately creating a more robust and resilient environment against cyberattacks.",
+    terms_of_use: "TERMS OF USE",
+    privacy_policy: "PRIVACY POLICY",
+    site_map: "SITE MAP",
+    copyright: "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved."
+  },
+  bg: {
+    page_title: "Оценка на уязвимости",
+    logo_text: "Изкуствен интелект в киберсигурността",
+    nav_home: "Начало",
+    nav_applications: "Приложения",
+    nav_risks: "Рискове",
+    nav_about: "За нас",
+    nav_chatgpt: "Отиди към chatGPT",
+    para1: "В динамично променящия се свят на киберсигурността, за да бъдеш винаги една стъпка пред нападателите, е необходимо постоянно да се търсят и адресират потенциални слабости. Тук идва ролята на AI-базираната оценка на уязвимости. Вместо да се разчита само на ръчни сканирания или случайни одити, AI инструментите работят непрекъснато, следейки операционните системи, приложенията и мрежовите конфигурации. Те търсят софтуер без актуализации, неправилни настройки и други системни дефекти, които киберпрестъпниците често експлоатират. Чрез автоматизиране на тази трудоемка задача, организациите могат да поддържат актуален профил за сигурност, без да претоварват човешките ресурси.",
+    para2: "Това, което отличава AI-базираните скенери за уязвимости, е способността им да приоритизират рисковете. Тези платформи сравняват данни от различни източници – от бази данни с известни експлойти до реални тенденции при пробиви – за да определят кои уязвимости представляват най-голям риск. Например, те могат да идентифицират критична софтуерна пролука, която активно се експлоатира от кампании за зловреден софтуер, и да я маркират като приоритет за незабавно отстраняване. Този интелигентен подход гарантира, че екипите се фокусират върху въпросите, които най-вероятно могат да бъдат експлоатирани, оптимизирайки времето и ресурсите. Така дори по-малки екипи по сигурност могат по-ефективно да управляват големи инфраструктури.",
+    para3: "Разбира се, автоматизацията и AI не елиминират нуждата от човешки надзор. Специалистите по сигурност играят ключова роля в проверката на резултатите от AI, прилагането на нюансирани решения за коригиране и осигуряването, че мерките съответстват на по-широките организационни цели. Въпреки това, чрез намаляване на догадките и ръчната работа, AI-базираната оценка на уязвимости значително засилва защитната позиция на организацията. С непрекъснато сканиране и интелигентно приоритизиране, екипите по сигурност могат първо да се справят с най-важните заплахи, създавайки по-силна и устойчива защита срещу кибератаки.",
+    terms_of_use: "Условия за ползване",
+    privacy_policy: "Политика за поверителност",
+    site_map: "Карта на сайта",
+    copyright: "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
+  },
+  de: {
+    page_title: "Schwachstellenbewertung",
+    logo_text: "KI in der Cybersicherheit",
+    nav_home: "Startseite",
+    nav_applications: "Anwendungen",
+    nav_risks: "Risiken",
+    nav_about: "Über uns",
+    nav_chatgpt: "Zu chatGPT gehen",
+    para1: "In der sich ständig weiterentwickelnden Welt der Cybersicherheit bedeutet es, den Angreifern stets einen Schritt voraus zu sein, dass man kontinuierlich nach potenziellen Schwachstellen sucht und diese behebt. Hier kommt die KI-gestützte Schwachstellenbewertung ins Spiel. Anstatt sich ausschließlich auf manuelle Scans oder gelegentliche Audits zu verlassen, arbeiten KI-Tools ununterbrochen, indem sie Betriebssysteme, Anwendungen und Netzwerkkonfigurationen überwachen. Sie suchen nach nicht gepatchter Software, Fehlkonfigurationen und anderen systemischen Mängeln, die von Cyberkriminellen häufig ausgenutzt werden. Durch die Automatisierung dieser ehemals arbeitsintensiven Aufgabe können Organisationen ein stets aktuelles Sicherheitsprofil aufrechterhalten, ohne die personellen Ressourcen zu überlasten.",
+    para2: "Was KI-gestützte Schwachstellen-Scanner wirklich auszeichnet, ist ihre Fähigkeit, Risiken zu priorisieren. Diese Plattformen vergleichen eine Vielzahl von Daten – von bekannten Exploit-Datenbanken bis hin zu realen Sicherheitsvorfalltrends – um zu bestimmen, welche Schwachstellen die größte Bedrohung darstellen. Beispielsweise können sie eine kritische Softwarelücke identifizieren, die aktiv von Malware-Kampagnen ins Visier genommen wird, und diese als höchste Priorität für sofortige Maßnahmen kennzeichnen. Dieser intelligenzbasierte Ansatz stellt sicher, dass Teams sich auf die Probleme konzentrieren, die am ehesten ausgenutzt werden, und optimiert so Zeit und Ressourcen. Dadurch können auch kleinere Sicherheitsteams große Infrastrukturen effektiver verwalten.",
+    para3: "Natürlich ersetzt die Automatisierung durch KI nicht die Notwendigkeit menschlicher Aufsicht. Sicherheitsexperten spielen eine wesentliche Rolle bei der Validierung von KI-Ergebnissen, der Anwendung nuancierter Entscheidungen zur Fehlerbehebung und der Gewährleistung, dass alle Maßnahmen mit den übergeordneten Zielen der Organisation in Einklang stehen. Dennoch stärkt die Reduzierung von Vermutungen und manueller Arbeit durch KI-gestützte Schwachstellenbewertung die Abwehrbereitschaft einer Organisation erheblich. Mit kontinuierlichem Scannen und intelligenter Priorisierung können Sicherheitsteams die drängendsten Bedrohungen zuerst angehen und so eine robustere und widerstandsfähigere Umgebung gegen Cyberangriffe schaffen.",
+    terms_of_use: "Nutzungsbedingungen",
+    privacy_policy: "Datenschutzrichtlinie",
+    site_map: "Seitenübersicht",
+    copyright: "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
+  }
+};
+function switchLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  document.title = translations[lang].page_title;
+}
+document.addEventListener("DOMContentLoaded", () => {
+  switchLanguage("en");
+});
+</script>
+</body>
+</html>

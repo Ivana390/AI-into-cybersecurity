@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/languageSwitcher.js" defer></script>
+    <style>
+       
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        #chat-box {
+            width: 80%;
+            max-width: 600px;
+            height: 400px;
+            margin: auto;
+            border: 2px solid #ccc;
+            background: white;
+            padding: 10px;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        .chat-message {
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 10px;
+            max-width: 75%;
+        }
+
+        .user {
+            background: #007bff;
+            color: white;
+            align-self: flex-end;
+        }
+
+        .bot {
+            background: #f1f1f1;
+            align-self: flex-start;
+        }
+
+        .chat-input-container {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="AI Logo">
+                <span data-i18n="logo_text">AI into cybersecurity</span>
+            </div>
+            <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="App.html" data-i18n="nav_applications">Applications</a></li>
+            <li><a href="Risks.html" data-i18n="nav_risks">Risks</a></li>
+            <li><a href="About_us.html" data-i18n="nav_about">About us</a></li>
+            <li><a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Go to ChatGPT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 data-i18n="main_title">AI Chatbot</h1>
+    <div id="chat-box">
+      <div class="chat-message bot" data-i18n="chat_welcome">Hello! How can I assist you?</div>
+    </div>
+    <div class="chat-input-container">
+      <input type="text" id="user-input" data-i18n-placeholder="chat_input_placeholder" placeholder="Type a message..." />
+      <button data-i18n="button_send">Send</button>
+        </div>
+    </main>
+
+    <footer>
+        <section class="items-wrap">
+            <section class="links-wrap">
+                <a href="https://github.com/Ivana390/AI-into-cybersecurity">
+                    <img src="images/git-logo.png">
+                </a>
+                <a href="https://discord.com/channels/@me">
+                    <img src="images/discord.png">
+                </a>
+            </section>
+            <section class="links-wrap">
+            <h3 data-i18n="terms_of_use">TERMS OF USE</h3>
+            <h3 data-i18n="privacy_policy">PRIVACY POLICY</h3>
+            <h3 data-i18n="site_map">SITE MAP</h3>
+            </section>
+            <section class="links-wrap">
+                <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')">
+                <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')">
+                <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')">
+            </section>
+        </section>
+        <h4 data-i18n="copyright">Copyright © 2025 AI into Cybersecurity. All rights reserved.</h4>
+    </footer>
+    <script>
+const translations = {
+  en: {
+    page_title: "AI Chatbot",
+    logo_text: "AI into cybersecurity",
+    nav_home: "Home",
+    nav_applications: "Applications",
+    nav_risks: "Risks",
+    nav_about: "About us",
+    nav_chatgpt: "Go to ChatGPT",
+    main_title: "AI Chatbot",
+    chat_welcome: "Hello! How can I assist you?",
+    chat_input_placeholder: "Type a message...",
+    button_send: "Send",
+    terms_of_use: "TERMS OF USE",
+    privacy_policy: "PRIVACY POLICY",
+    site_map: "SITE MAP",
+    copyright:
+      "Copyright © 2025 AI into Cybersecurity. All rights reserved."
+  },
+  bg: {
+    page_title: "AI Чатбот",
+    logo_text: "Изкуствен интелект в киберсигурността",
+    nav_home: "Начало",
+    nav_applications: "Приложения",
+    nav_risks: "Рискове",
+    nav_about: "За нас",
+    nav_chatgpt: "Отиди към ChatGPT",
+    main_title: "AI Чатбот",
+    chat_welcome: "Здравейте! Как мога да ви помогна?",
+    chat_input_placeholder: "Въведете съобщение...",
+    button_send: "Изпрати",
+    terms_of_use: "Условия за ползване",
+    privacy_policy: "Политика за поверителност",
+    site_map: "Карта на сайта",
+    copyright:
+      "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
+  },
+  de: {
+    page_title: "KI Chatbot",
+    logo_text: "KI in der Cybersicherheit",
+    nav_home: "Startseite",
+    nav_applications: "Anwendungen",
+    nav_risks: "Risiken",
+    nav_about: "Über uns",
+    nav_chatgpt: "Zu ChatGPT gehen",
+    main_title: "KI Chatbot",
+    chat_welcome: "Hallo! Wie kann ich Ihnen helfen?",
+    chat_input_placeholder: "Nachricht eingeben...",
+    button_send: "Senden",
+    terms_of_use: "Nutzungsbedingungen",
+    privacy_policy: "Datenschutzrichtlinie",
+    site_map: "Seitenübersicht",
+    copyright:
+      "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
+  }
+};
+
+
+function switchLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      
+      el.innerHTML = translations[lang][key];
+    }
+  });
+
+  document.title = translations[lang].page_title;
+  
+ 
+  const input = document.querySelector("[data-i18n-placeholder]");
+  if (input && translations[lang]["chat_input_placeholder"]) {
+    input.placeholder = translations[lang]["chat_input_placeholder"];
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  switchLanguage("en");
+});
+</script>
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

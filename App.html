@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title">Applications</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="AI Logo" />
+          <span data-i18n="logo_text">AI into cybersecurity</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="App.html" data-i18n="nav_applications">Applications</a></li>
+          <li><a href="Risks.html" data-i18n="nav_risks">Risks</a></li>
+          <li><a href="About_us.html" data-i18n="nav_about">About us</a></li>
+          <li>
+            <a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Go to chatGPT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container-app">
+        <section class="side-elements">
+          <section>
+            <img src="images/detection.png" alt="Detection & Analysis" />
+            <a href="./Detection & Analysis.html">
+              <h3 data-i18n="app_detection_analysis">Detection & Analysis</h3>
+            </a>
+          </section>
+          <section>
+            <img src="images/incident.png" alt="Incident Response & Automation" />
+            <a href="./Incident Response & Automation.html">
+              <h3 data-i18n="app_incident_response">Incident Response & Automation</h3>
+            </a>
+          </section>
+          <section>
+            <img src="images/insider.png" alt="Insider Threat Detection" />
+            <a href="./Insider Threat Detection.html">
+              <h3 data-i18n="app_insider_threat">Insider Threat Detection</h3>
+            </a>
+          </section>
+        </section>
+        <section>
+          <a href="./Risks.html"></a>
+          <img src="images/button.png" alt="Button" />
+        </section>
+        <section class="side-elements">
+          <section>
+            <img src="images/vulnerability.png" alt="Vulnerability Assessment" />
+            <a href="./Vulnerability Assessment.html">
+              <h3 data-i18n="app_vulnerability_assessment">Vulnerability Assessment</h3>
+            </a>
+          </section>
+          <section>
+            <img src="images/threat.png" alt="Threat Intelligence & Prediction" />
+            <a href="./Threat Intelligence & Prediction.html">
+              <h3 data-i18n="app_threat_intelligence">Threat Intelligence & Prediction</h3>
+            </a>
+          </section>
+          <section>
+            <img src="images/ethics.png" alt="Ethics & Governance" />
+            <a href="./Ethics & Governance.html">
+              <h3 data-i18n="app_ethics_governance">Ethics & Governance</h3>
+            </a>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="items-wrap">
+        <section class="links-wrap">
+          <a href="https://github.com/Ivana390/AI-into-cybersecurity">
+            <img src="images/git-logo.png" alt="GitHub" />
+          </a>
+          <a href="https://discord.com/channels/@me">
+            <img src="images/discord.png" alt="Discord" />
+          </a>
+        </section>
+        <section class="links-wrap">
+          <h3 data-i18n="terms_of_use">TERMS OF USE</h3>
+          <h3 data-i18n="privacy_policy">PRIVACY POLICY</h3>
+          <h3 data-i18n="site_map">SITE MAP</h3>
+        </section>
+        <section class="links-wrap">
+          <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')"/>
+          <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')"/>
+          <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')"/>
+        </section>
+      </section>
+      <h4 data-i18n="copyright">
+        Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.
+      </h4>
+    </footer>
+    <script>
+      const translations = {
+        en: {
+          page_title: "Applications",
+          nav_home: "Home",
+          nav_applications: "Applications",
+          nav_risks: "Risks",
+          nav_about: "About us",
+          nav_chatgpt: "Go to chatGPT",
+          logo_text: "AI into cybersecurity",
+          app_detection_analysis: "Detection & Analysis",
+          app_incident_response: "Incident Response & Automation",
+          app_insider_threat: "Insider Threat Detection",
+          app_vulnerability_assessment: "Vulnerability Assessment",
+          app_threat_intelligence: "Threat Intelligence & Prediction",
+          app_ethics_governance: "Ethics & Governance",
+          terms_of_use: "TERMS OF USE",
+          privacy_policy: "PRIVACY POLICY",
+          site_map: "SITE MAP",
+          copyright:
+            "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved."
+        },
+        bg: {
+          page_title: "Приложения",
+          nav_home: "Начало",
+          nav_applications: "Приложения",
+          nav_risks: "Рискове",
+          nav_about: "За нас",
+          nav_chatgpt: "Отиди към chatGPT",
+          logo_text: "Изкуствен интелект в киберсигурността",
+          app_detection_analysis: "Откриване и анализ",
+          app_incident_response: "Отговор на инциденти и автоматизация",
+          app_insider_threat: "Откриване на вътрешни заплахи",
+          app_vulnerability_assessment: "Оценка на уязвимостите",
+          app_threat_intelligence: "Разузнаване и прогнозиране на заплахи",
+          app_ethics_governance: "Етика и управление",
+          terms_of_use: "Условия за ползване",
+          privacy_policy: "Политика за поверителност",
+          site_map: "Карта на сайта",
+          copyright:
+            "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
+        },
+        de: {
+          page_title: "Anwendungen",
+          nav_home: "Startseite",
+          nav_applications: "Anwendungen",
+          nav_risks: "Risiken",
+          nav_about: "Über uns",
+          nav_chatgpt: "Zu chatGPT gehen",
+          logo_text: "KI in der Cybersicherheit",
+          app_detection_analysis: "Erkennung & Analyse",
+          app_incident_response: "Incident Response & Automatisierung",
+          app_insider_threat: "Erkennung interner Bedrohungen",
+          app_vulnerability_assessment: "Schwachstellenbewertung",
+          app_threat_intelligence: "Bedrohungsaufklärung & -prognose",
+          app_ethics_governance: "Ethik & Governance",
+          terms_of_use: "Nutzungsbedingungen",
+          privacy_policy: "Datenschutzrichtlinie",
+          site_map: "Seitenübersicht",
+          copyright:
+            "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
+        }
+      };
+      function switchLanguage(lang) {
+        const elements = document.querySelectorAll("[data-i18n]");
+        elements.forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
+        });
+        document.title = translations[lang].page_title;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("lang-en").addEventListener("click", () => switchLanguage("en"));
+        document.getElementById("lang-bg").addEventListener("click", () => switchLanguage("bg"));
+        document.getElementById("lang-de").addEventListener("click", () => switchLanguage("de"));
+        document.getElementById("footer-lang-en").addEventListener("click", () => switchLanguage("en"));
+        document.getElementById("footer-lang-bg").addEventListener("click", () => switchLanguage("bg"));
+        document.getElementById("footer-lang-de").addEventListener("click", () => switchLanguage("de"));
+        switchLanguage("en");
+      });
+    </script>
+  </body>
+</html>

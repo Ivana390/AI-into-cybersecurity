@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page_title">Privacy Violations & Ethical Concerns</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="./js/languageSwitcher.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="AI Logo" />
+        <span data-i18n="logo_text">AI into cybersecurity</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="App.html" data-i18n="nav_applications">Applications</a></li>
+        <li><a href="Risks.html" data-i18n="nav_risks">Risks</a></li>
+        <li><a href="About_us.html" data-i18n="nav_about">About us</a></li>
+        <li>
+          <a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Go to chatGPT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <img src="images/risks_3.webp" alt="Risk Image" />
+    <h1 data-i18n="page_title">Privacy Violations & Ethical Concerns</h1>
+    <p data-i18n="para1">
+      The more advanced AI-powered cybersecurity solutions become, the more they rely on enormous amounts of user data to detect threats and analyze behavior patterns. While amassing the data is critical in order to alert on anomalies, it's also a serious privacy concern—especially when organizations are surveilling workers, customers, or users without their direct permission. AI-driven security software tends to track logins, file access, and even communication logs, and thus the line between security and surveillance is thin. If not handled openly and in a secure manner, such information erodes users' trust and invites legal action under stringent data protection laws like GDPR, CCPA, and HIPAA. Companies must be transparent that cybersecurity measures enhance privacy rights while maintaining aggressive security protection.
+    </p>
+    <p data-i18n="para2">
+      Beyond the privacy question, AI systems can also pose ethical risks, particularly when they're making security decisions on their own without human involvement. When an AI model has been trained on biased or limited data sets, it can produce discriminatory outcomes, like unfairly flagging users or behaviors as threats based on compromised historical patterns. For instance, biased AI models may overrepresent false positives for specific geographic regions or segments of users, leading to unwarranted account lockouts or security escalations. Similarly, AI-powered fraud detection and risk analysis tools may unintentionally lock out legitimate users whose activities haven't conformed to the predefined "safe" patterns within the AI. This is an ethical issue in which security controls may have the potential to exclude or discriminate against specific individuals.
+    </p>
+    <p data-i18n="para3">
+      To mitigate these risks, organizations need to adopt robust AI governance structures that prioritize transparency, accountability, and ethics. AI-powered cybersecurity solutions need to be explainable and auditable so that security teams can comprehend and contest the decision-making of the AI. Privacy-prioritizing measures—like data anonymization, differential privacy, and explicit user consent models—can be used to reduce surveillance threats without hindering the effectiveness of AI. In addition, organizations need to continually monitor AI for biases, with periodic refreshes to training data to promote equitable and accurate threat detection. Lastly, cybersecurity should not come at the expense of privacy and ethics; rather, a finely tuned approach ensures both effective protection and ethical application of AI, allowing users and stakeholders to trust.
+    </p>
+  </main>
+  <footer>
+    <section class="items-wrap">
+      <section class="links-wrap">
+        <a href="https://github.com/Ivana390/AI-into-cybersecurity">
+          <img src="images/git-logo.png" alt="GitHub" />
+        </a>
+        <a href="https://discord.com/channels/@me">
+          <img src="images/discord.png" alt="Discord" />
+        </a>
+      </section>
+      <section class="links-wrap">
+        <h3 data-i18n="terms_of_use">TERMS OF USE</h3>
+        <h3 data-i18n="privacy_policy">PRIVACY POLICY</h3>
+        <h3 data-i18n="site_map">SITE MAP</h3>
+      </section>
+      <section class="links-wrap">
+        <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')" />
+        <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')" />
+        <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')" />
+      </section>
+    </section>
+    <h4 data-i18n="copyright">
+      Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.
+    </h4>
+  </footer>
+  <script>
+const translations = {
+  en: {
+    page_title: "Privacy Violations & Ethical Concerns",
+    logo_text: "AI into cybersecurity",
+    nav_home: "Home",
+    nav_applications: "Applications",
+    nav_risks: "Risks",
+    nav_about: "About us",
+    nav_chatgpt: "Go to chatGPT",
+    para1: "The more advanced AI-powered cybersecurity solutions become, the more they rely on enormous amounts of user data to detect threats and analyze behavior patterns. While amassing the data is critical in order to alert on anomalies, it's also a serious privacy concern—especially when organizations are surveilling workers, customers, or users without their direct permission. AI-driven security software tends to track logins, file access, and even communication logs, and thus the line between security and surveillance is thin. If not handled openly and in a secure manner, such information erodes users' trust and invites legal action under stringent data protection laws like GDPR, CCPA, and HIPAA. Companies must be transparent that cybersecurity measures enhance privacy rights while maintaining aggressive security protection.",
+    para2: "Beyond the privacy question, AI systems can also pose ethical risks, particularly when they're making security decisions on their own without human involvement. When an AI model has been trained on biased or limited data sets, it can produce discriminatory outcomes, like unfairly flagging users or behaviors as threats based on compromised historical patterns. For instance, biased AI models may overrepresent false positives for specific geographic regions or segments of users, leading to unwarranted account lockouts or security escalations. Similarly, AI-powered fraud detection and risk analysis tools may unintentionally lock out legitimate users whose activities haven't conformed to the predefined \"safe\" patterns within the AI. This is an ethical issue in which security controls may have the potential to exclude or discriminate against specific individuals.",
+    para3: "To mitigate these risks, organizations need to adopt robust AI governance structures that prioritize transparency, accountability, and ethics. AI-powered cybersecurity solutions need to be explainable and auditable so that security teams can comprehend and contest the decision-making of the AI. Privacy-prioritizing measures—like data anonymization, differential privacy, and explicit user consent models—can be used to reduce surveillance threats without hindering the effectiveness of AI. In addition, organizations need to continually monitor AI for biases, with periodic refreshes to training data to promote equitable and accurate threat detection. Lastly, cybersecurity should not come at the expense of privacy and ethics; rather, a finely tuned approach ensures both effective protection and ethical application of AI, allowing users and stakeholders to trust.",
+    terms_of_use: "TERMS OF USE",
+    privacy_policy: "PRIVACY POLICY",
+    site_map: "SITE MAP",
+    copyright: "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved."
+  },
+  bg: {
+    page_title: "Нарушения на поверителността и етични въпроси",
+    logo_text: "Изкуствен интелект в киберсигурността",
+    nav_home: "Начало",
+    nav_applications: "Приложения",
+    nav_risks: "Рискове",
+    nav_about: "За нас",
+    nav_chatgpt: "Отиди към chatGPT",
+    para1: "Колкото по-напреднали стават AI-базираните решения в киберсигурността, толкова повече се разчита на огромни количества потребителски данни за откриване на заплахи и анализиране на моделите на поведение. Въпреки че събирането на данни е от съществено значение за засичането на аномалии, то представлява сериозен проблем за поверителността – особено когато организациите следят служители, клиенти или потребители без тяхно изрично съгласие. Софтуерът за сигурност, управляван от AI, обикновено проследява влизания, достъп до файлове и дори комуникационни логове, което прави границата между сигурността и наблюдението тънка. Ако такава информация не се обработва открито и сигурно, тя може да подкопае доверието на потребителите и да доведе до правни действия според строги закони за защита на данните като GDPR, CCPA и HIPAA. Организациите трябва да бъдат прозрачни, че мерките за киберсигурност подобряват правата за поверителност, като същевременно поддържат агресивна защита.",
+    para2: "Освен въпроса за поверителността, AI системите могат да представляват и етични рискове, особено когато вземат решения за сигурност без човешка намеса. Когато AI модел е обучен върху пристрастни или ограничени данни, той може да произведе дискриминационни резултати, като несправедливо маркира потребители или поведения като заплахи на база компрометирани исторически модели. Например, пристрастните AI модели може да генерират прекалено много фалшиви аларми за конкретни географски региони или групи потребители, което води до неоснователни заключвания на акаунти или ескалации в сигурността. По същия начин, AI-базираните инструменти за разузнаване и анализ на риска може неволно да блокират легитимни потребители, чиято активност не отговаря на предварително зададените „безопасни“ модели. Това е етичен проблем, при който мерките за сигурност могат да изключат или дискриминират определени лица.",
+    para3: "За да се намалят тези рискове, организациите трябва да приемат стабилни структури за управление на AI, които дават приоритет на прозрачността, отчетността и етиката. AI-базираните решения в киберсигурността трябва да бъдат обясними и подлежат на одит, така че екипите по сигурност да могат да разбират и оспорват процесите на вземане на решения от AI. Мерки за защита на поверителността – като анонимизация на данните, диференциална поверителност и изрични модели за съгласие от потребителите – могат да намалят заплахите от наблюдение, без да се компрометира ефективността на AI. Освен това, организациите трябва постоянно да следят AI за пристрастия и периодично да обновяват обучаващите данни, за да се постигне равнопоставено и точно откриване на заплахите. Накрая, киберсигурността не трябва да става за сметка на поверителността и етиката; напротив, добре балансираният подход осигурява ефективна защита и етично приложение на AI, което позволява на потребителите и заинтересованите страни да имат доверие.",
+    terms_of_use: "Условия за ползване",
+    privacy_policy: "Политика за поверителност",
+    site_map: "Карта на сайта",
+    copyright: "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
+  },
+  de: {
+    page_title: "Datenschutzverletzungen & ethische Bedenken",
+    logo_text: "KI in der Cybersicherheit",
+    nav_home: "Startseite",
+    nav_applications: "Anwendungen",
+    nav_risks: "Risiken",
+    nav_about: "Über uns",
+    nav_chatgpt: "Zu chatGPT gehen",
+    para1: "Je fortschrittlicher KI-gestützte Lösungen in der Cybersicherheit werden, desto mehr stützen sie sich auf enorme Mengen an Benutzerdaten, um Bedrohungen zu erkennen und Verhaltensmuster zu analysieren. Während das Sammeln dieser Daten entscheidend ist, um Anomalien zu erkennen, stellt es auch ein ernsthaftes Datenschutzproblem dar – insbesondere wenn Organisationen Mitarbeiter, Kunden oder Nutzer ohne deren ausdrückliche Zustimmung überwachen. KI-basierte Sicherheitssoftware verfolgt Logins, Dateizugriffe und sogar Kommunikationsprotokolle, wodurch die Grenze zwischen Sicherheit und Überwachung verschwimmt. Wird diese Information nicht offen und sicher gehandhabt, untergräbt sie das Vertrauen der Nutzer und lädt zu rechtlichen Schritten nach strengen Datenschutzgesetzen wie GDPR, CCPA und HIPAA ein. Unternehmen müssen transparent machen, dass Cybersecurity-Maßnahmen die Datenschutzrechte stärken, während sie gleichzeitig eine aggressive Sicherheitsstrategie beibehalten.",
+    para2: "Über den Datenschutz hinaus können KI-Systeme auch ethische Risiken bergen, insbesondere wenn sie eigenständig Sicherheitsentscheidungen treffen, ohne dass ein Mensch eingreift. Wenn ein KI-Modell auf voreingenommenen oder begrenzten Datensätzen trainiert wurde, kann es diskriminierende Ergebnisse liefern, indem es Nutzer oder Verhaltensweisen auf Basis kompromittierter historischer Muster ungerechtfertigt als Bedrohung einstuft. So können voreingenommene KI-Modelle beispielsweise zu viele Fehlalarme in bestimmten geografischen Regionen oder Nutzersegmenten auslösen, was zu ungerechtfertigten Kontosperrungen oder Sicherheitseskalationen führt. Ebenso können KI-gestützte Betrugserkennungssysteme legitime Nutzer blockieren, deren Aktivitäten nicht den vordefinierten „sicheren“ Mustern entsprechen. Dies stellt ein ethisches Problem dar, da Sicherheitsmaßnahmen das Potenzial haben, bestimmte Personen auszuschließen oder zu diskriminieren.",
+    para3: "Um diese Risiken zu mindern, müssen Organisationen robuste Governance-Strukturen für KI einführen, die Transparenz, Verantwortlichkeit und Ethik in den Vordergrund stellen. KI-gestützte Cybersecurity-Lösungen sollten erklärbar und auditierbar sein, sodass Sicherheitsteams die Entscheidungsfindung nachvollziehen und anfechten können. Maßnahmen zum Schutz der Privatsphäre – wie Datenanonymisierung, differentielle Privatsphäre und explizite Einwilligungsmodelle – können dazu beitragen, Überwachungsbedrohungen zu reduzieren, ohne die Effektivität der KI zu beeinträchtigen. Zudem sollten Organisationen die KI kontinuierlich auf mögliche Vorurteile überwachen und die Trainingsdaten regelmäßig aktualisieren, um eine gerechte und präzise Bedrohungserkennung zu gewährleisten. Abschließend sollte Cybersecurity nicht zulasten von Datenschutz und Ethik gehen; vielmehr sorgt ein ausgewogener Ansatz dafür, dass sowohl effektiver Schutz als auch eine ethisch vertretbare Anwendung von KI gewährleistet werden, sodass Nutzer und Stakeholder Vertrauen haben.",
+    terms_of_use: "Nutzungsbedingungen",
+    privacy_policy: "Datenschutzrichtlinie",
+    site_map: "Seitenübersicht",
+    copyright: "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
+  }
+};
+function switchLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  document.title = translations[lang].page_title;
+}
+document.addEventListener("DOMContentLoaded", () => {
+  switchLanguage("en");
+});
+  </script>
+</body>
+</html>

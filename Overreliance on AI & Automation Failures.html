@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page_title">Insider Threat Detection</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="./js/languageSwitcher.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="AI Logo" />
+        <span data-i18n="logo_text">AI into cybersecurity</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="App.html" data-i18n="nav_applications">Applications</a></li>
+        <li><a href="Risks.html" data-i18n="nav_risks">Risks</a></li>
+        <li><a href="About_us.html" data-i18n="nav_about">About us</a></li>
+        <li>
+          <a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Go to chatGPT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 data-i18n="page_title">Insider Threat Detection</h1>
+    <p data-i18n="para1">
+      While AI has revolutionized cybersecurity by enhancing speed and efficiency, overreliance on automated systems can create significant risks. Many organizations adopt AI-driven threat detection and incident response solutions with the assumption that these systems can function autonomously without human intervention. However, AI is not infallible—it relies on historical data and predefined patterns to identify threats, which means it may struggle with zero-day attacks or novel attack strategies that deviate from past incidents. If organizations depend solely on AI without human oversight, they risk missing critical security threats that fall outside the AI’s learning scope. Additionally, automated systems may misinterpret legitimate activity as a security threat, leading to false positives that disrupt normal operations and waste security resources.
+    </p>
+    <p data-i18n="para2">
+      One of the most concerning risks of automation failures is automated decision-making without human validation. AI-powered incident response systems are designed to react swiftly to perceived threats, sometimes triggering automatic containment measures, such as shutting down network segments, restricting user access, or quarantining files. While these responses can be effective in real attacks, false positives or misconfigurations may cause AI to mistakenly disable critical systems, leading to unnecessary downtime and financial losses. Attackers can even manipulate AI's decision-making process by deliberately crafting attacks that mimic false positives, forcing security teams to turn off automated protections to restore normal business functions. Without proper safeguards and manual intervention, organizations risk creating a fragile security infrastructure that is easily exploited.
+    </p>
+    <p data-i18n="para3">
+      To mitigate the risks associated with AI overreliance, organizations must implement a balanced approach that integrates AI with human expertise. AI should act as an enhancement tool, not a standalone decision-maker. Security teams must establish clear escalation procedures, ensuring that AI-generated alerts and automated responses are reviewed by human analysts before taking drastic actions. Additionally, adaptive AI models that continuously learn from new attack patterns—combined with regular system audits—can improve accuracy while reducing the likelihood of false positives and false negatives. The most effective cybersecurity strategy is one that blends automation with human intuition, allowing AI to handle large-scale data analysis while security professionals focus on contextual decision-making and strategic planning.
+    </p>
+    <img src="images/Insider-Threat-Detection.png" alt="Insider Threat Detection Illustration" />
+  </main>
+  <footer>
+    <section class="items-wrap">
+      <section class="links-wrap">
+        <a href="https://github.com/Ivana390/AI-into-cybersecurity">
+          <img src="images/git-logo.png" alt="GitHub" />
+        </a>
+        <a href="https://discord.com/channels/@me">
+          <img src="images/discord.png" alt="Discord" />
+        </a>
+      </section>
+      <section class="links-wrap">
+        <h3 data-i18n="terms_of_use">TERMS OF USE</h3>
+        <h3 data-i18n="privacy_policy">PRIVACY POLICY</h3>
+        <h3 data-i18n="site_map">SITE MAP</h3>
+      </section>
+      <section class="links-wrap">
+        <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')" />
+        <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')" />
+        <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')" />
+      </section>
+    </section>
+    <h4 data-i18n="copyright">
+      Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.
+    </h4>
+  </footer>
+  <script>
+const translations = {
+  en: {
+    page_title: "Insider Threat Detection",
+    logo_text: "AI into cybersecurity",
+    nav_home: "Home",
+    nav_applications: "Applications",
+    nav_risks: "Risks",
+    nav_about: "About us",
+    nav_chatgpt: "Go to chatGPT",
+    para1: "While AI has revolutionized cybersecurity by enhancing speed and efficiency, overreliance on automated systems can create significant risks. Many organizations adopt AI-driven threat detection and incident response solutions with the assumption that these systems can function autonomously without human intervention. However, AI is not infallible—it relies on historical data and predefined patterns to identify threats, which means it may struggle with zero-day attacks or novel attack strategies that deviate from past incidents. If organizations depend solely on AI without human oversight, they risk missing critical security threats that fall outside the AI’s learning scope. Additionally, automated systems may misinterpret legitimate activity as a security threat, leading to false positives that disrupt normal operations and waste security resources.",
+    para2: "One of the most concerning risks of automation failures is automated decision-making without human validation. AI-powered incident response systems are designed to react swiftly to perceived threats, sometimes triggering automatic containment measures, such as shutting down network segments, restricting user access, or quarantining files. While these responses can be effective in real attacks, false positives or misconfigurations may cause AI to mistakenly disable critical systems, leading to unnecessary downtime and financial losses. Attackers can even manipulate AI's decision-making process by deliberately crafting attacks that mimic false positives, forcing security teams to turn off automated protections to restore normal business functions. Without proper safeguards and manual intervention, organizations risk creating a fragile security infrastructure that is easily exploited.",
+    para3: "To mitigate the risks associated with AI overreliance, organizations must implement a balanced approach that integrates AI with human expertise. AI should act as an enhancement tool, not a standalone decision-maker. Security teams must establish clear escalation procedures, ensuring that AI-generated alerts and automated responses are reviewed by human analysts before taking drastic actions. Additionally, adaptive AI models that continuously learn from new attack patterns—combined with regular system audits—can improve accuracy while reducing the likelihood of false positives and false negatives. The most effective cybersecurity strategy is one that blends automation with human intuition, allowing AI to handle large-scale data analysis while security professionals focus on contextual decision-making and strategic planning.",
+    copyright:
+      "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.",
+    terms_of_use: "TERMS OF USE",
+    privacy_policy: "PRIVACY POLICY",
+    site_map: "SITE MAP"
+  },
+  bg: {
+    page_title: "Откриване на вътрешни заплахи",
+    logo_text: "Изкуствен интелект в киберсигурността",
+    nav_home: "Начало",
+    nav_applications: "Приложения",
+    nav_risks: "Рискове",
+    nav_about: "За нас",
+    nav_chatgpt: "Отиди към chatGPT",
+    para1: "Докато AI революционизира киберсигурността, като увеличава скоростта и ефективността, прекомерната зависимост от автоматизирани системи може да създаде сериозни рискове. Много организации внедряват AI-базирани системи за откриване на заплахи и реагиране при инциденти, вярвайки, че тези системи могат да функционират автономно без човешка намеса. Въпреки това, AI не е безгрешен – той се базира на исторически данни и предварително дефинирани модели, което означава, че може да се затрудни при нулеви атаки или нови стратегии, които се различават от предишните инциденти. Ако организациите разчитат единствено на AI без човешки контрол, те рискуват да пропуснат критични заплахи, които излизат извън обхвата на обучението на AI. Освен това, автоматизираните системи могат да тълкуват легитимна дейност като заплаха, водейки до фалшиви аларми, които нарушават нормалните операции и разхищават ресурси.",
+    para2: "Един от най-тревожните рискове от неуспехите на автоматизацията е автоматизираното вземане на решения без човешка валидация. AI-базираните системи за реакция при инциденти са проектирани да реагират бързо на възприемани заплахи, понякога задействайки автоматични мерки за ограничаване, като спиране на определени мрежови сегменти, ограничаване на достъпа на потребителите или поставяне на файлове в карантина. Макар че тези мерки могат да бъдат ефективни при реални атаки, фалшивите аларми или грешните настройки могат да доведат до нежелано спиране на критични системи, причинявайки прекъсвания и финансови загуби. Нападателите дори могат да манипулират процеса на вземане на решения от AI, като създадат атаки, които имитират фалшиви аларми, принуждавайки екипите да изключат автоматизираните защити, за да възстановят нормалната работа.",
+    para3: "За да се намалят рисковете от прекомерна зависимост от AI, организациите трябва да внедрят балансиран подход, който съчетава AI с човешка експертиза. AI трябва да действа като инструмент за подобряване, а не като единствено решение. Екипите по сигурност трябва да установят ясни процедури за ескалация, като гарантират, че алармите и автоматизираните реакции генерирани от AI се преглеждат от човешки анализатори преди да се предприемат драстични мерки. Освен това, адаптивните AI модели, които постоянно се обучават от нови атаки, в комбинация с редовни одити, могат да подобрят точността и да намалят вероятността от фалшиви аларми. Най-ефективната стратегия за киберсигурност е тази, която съчетава автоматизацията с човешката интуиция, позволявайки на AI да обработва големи обеми данни, докато експертите се фокусират върху контекстуални решения и стратегическо планиране.",
+    copyright:
+      "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени.",
+    terms_of_use: "Условия за ползване",
+    privacy_policy: "Политика за поверителност",
+    site_map: "Карта на сайта"
+  },
+  de: {
+    page_title: "Datenschutzverletzungen & ethische Bedenken",
+    logo_text: "KI in der Cybersicherheit",
+    nav_home: "Startseite",
+    nav_applications: "Anwendungen",
+    nav_risks: "Risiken",
+    nav_about: "Über uns",
+    nav_chatgpt: "Zu chatGPT gehen",
+    para1: "Je fortschrittlicher KI-gestützte Cybersecurity-Lösungen werden, desto mehr stützen sie sich auf enorme Mengen an Benutzerdaten, um Bedrohungen zu erkennen und Verhaltensmuster zu analysieren. Während das Sammeln dieser Daten entscheidend ist, um Anomalien zu identifizieren, stellt es auch ein ernsthaftes Datenschutzproblem dar – insbesondere wenn Organisationen Mitarbeiter, Kunden oder Nutzer ohne deren ausdrückliche Zustimmung überwachen. KI-basierte Sicherheitssoftware verfolgt Logins, Dateizugriffe und sogar Kommunikationsprotokolle, wodurch die Grenze zwischen Sicherheit und Überwachung verschwimmt. Wird diese Information nicht offen und sicher gehandhabt, untergräbt sie das Vertrauen der Nutzer und führt zu rechtlichen Schritten nach strengen Datenschutzgesetzen wie GDPR, CCPA und HIPAA.",
+    para2: "Über den Datenschutz hinaus bergen KI-Systeme auch ethische Risiken, insbesondere wenn sie eigenständig Sicherheitsentscheidungen treffen, ohne dass ein Mensch eingreift. Wenn ein KI-Modell auf voreingenommenen oder begrenzten Datensätzen trainiert wurde, kann es diskriminierende Ergebnisse liefern, indem es Nutzer oder Verhaltensweisen auf Basis kompromittierter historischer Muster ungerechtfertigt als Bedrohung einstuft. Beispielsweise können voreingenommene KI-Modelle zu viele Fehlalarme in bestimmten geografischen Regionen oder Nutzersegmenten auslösen, was zu ungerechtfertigten Kontosperrungen oder Sicherheitseskalationen führt.",
+    para3: "Um diese Risiken zu mindern, müssen Organisationen robuste Governance-Strukturen für KI einführen, die Transparenz, Verantwortlichkeit und Ethik in den Vordergrund stellen. KI-gestützte Cybersecurity-Lösungen sollten erklärbar und auditierbar sein, sodass Sicherheitsteams die Entscheidungsprozesse nachvollziehen und anfechten können. Maßnahmen zum Schutz der Privatsphäre – wie Datenanonymisierung, differentielle Privatsphäre und explizite Einwilligungsmodelle – können dazu beitragen, Überwachungsbedrohungen zu reduzieren, ohne die Effektivität der KI zu beeinträchtigen. Zudem sollten Organisationen die KI kontinuierlich auf mögliche Vorurteile überwachen und die Trainingsdaten regelmäßig aktualisieren, um eine gerechte und präzise Bedrohungserkennung zu gewährleisten. Abschließend sollte Cybersecurity nicht zulasten von Datenschutz und Ethik gehen; vielmehr sorgt ein ausgewogener Ansatz dafür, dass sowohl effektiver Schutz als auch eine ethisch vertretbare Anwendung von KI gewährleistet werden, sodass Nutzer und Stakeholder Vertrauen haben.",
+    terms_of_use: "Nutzungsbedingungen",
+    privacy_policy: "Datenschutzrichtlinie",
+    site_map: "Seitenübersicht",
+    copyright: "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
+  }
+};
+function switchLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  document.title = translations[lang].page_title;
+}
+document.addEventListener("DOMContentLoaded", () => {
+  switchLanguage("en");
+});
+</script>
+</body>
+</html>
