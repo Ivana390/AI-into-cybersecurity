@@ -9,24 +9,45 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">
+        <a href="index.html" class="logo">
           <img src="images/logo.png" alt="AI Logo" />
-          <span data-i18n="logo_text">Изкуствен интелект в киберсигурността</span>
+          <span data-i18n="logo_text"
+            >Изкуствен интелект в киберсигурността</span
+          >
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
         <ul class="nav-links">
           <li><a href="index.html" data-i18n="nav_home">Начало</a></li>
-          <li><a href="App.html" data-i18n="nav_applications">Приложения</a></li>
+          <li>
+            <a href="App.html" data-i18n="nav_applications">Приложения</a>
+          </li>
           <li><a href="Risks.html" data-i18n="nav_risks">Рискове</a></li>
-          <li><a href="#" data-i18n="nav_about">За нас</a></li>
-          <li><a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Отиди към chatGPT</a></li>
+          <li><a href="About_us.html" data-i18n="nav_about">За нас</a></li>
+          <li>
+            <a
+              href="Go_to_chatGPT.html"
+              class="cta-button"
+              data-i18n="nav_chatgpt"
+              >Отиди към chatGPT</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-content">
       <div class="about-us-container">
         <div class="container">
           <div class="about-us-text">
-            <a href="#"><img src="images/ivana.jpg" class="img-container" alt="Ivana Likova" /></a>
+            <a href="#"
+              ><img
+                src="images/ivana.jpg"
+                class="img-container"
+                alt="Ivana Likova"
+            /></a>
             <div class="title-container">
               <h2 data-i18n="ivana_name">Ивана Ликова</h2>
               <h4 data-i18n="student">Ученик</h4>
@@ -34,17 +55,24 @@
             <div class="desc-container">
               <h5 data-i18n="about_me">За мен:</h5>
               <p data-i18n="ivana_desc1">
-                Ученичка в Езикова гимназия „Акад. Людмил Стоянов“ в Благоевград.
+                Ученичка в Езикова гимназия „Акад. Людмил Стоянов“ в
+                Благоевград.
               </p>
               <p data-i18n="ivana_desc2">
-                Интересувам се от визуални изкуства (уеб дизайн), програмиране, плуване, пеене, ски, готвене.
+                Интересувам се от визуални изкуства (уеб дизайн), програмиране,
+                плуване, пеене, ски, готвене.
               </p>
             </div>
           </div>
         </div>
         <div class="container">
           <div class="about-us-text">
-            <a href="#"><img src="images/ivan.jpg" class="img-container" alt="Ivan Dokolyakov" /></a>
+            <a href="#"
+              ><img
+                src="images/ivan.jpg"
+                class="img-container"
+                alt="Ivan Dokolyakov"
+            /></a>
             <div class="title-container">
               <h2 data-i18n="ivan_name">Иван Доколяков</h2>
               <h4 data-i18n="student">Ученик</h4>
@@ -55,14 +83,16 @@
                 Ученик в Езикова гимназия „Акад. Людмил Стоянов“ в Благоевград.
               </p>
               <p data-i18n="ivan_desc2">
-                Имам силен интерес към киберсигурността, по-специално към откриването на заплахи, както и към тенис на маса, готвене, здраве и самоусъвършенстване.
+                Имам силен интерес към киберсигурността, по-специално към
+                откриването на заплахи, както и към тенис на маса, готвене,
+                здраве и самоусъвършенстване.
               </p>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer-content">
       <section class="items-wrap">
         <section class="links-wrap">
           <a href="https://github.com/Ivana390/AI-into-cybersecurity">
@@ -78,13 +108,29 @@
           <h3 data-i18n="site_map">КАРТА НА САЙТА</h3>
         </section>
         <section class="links-wrap">
-          <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')"/>
-          <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')"/>
-          <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')" />
+          <img
+            src="images/en-logo.png"
+            alt="English"
+            id="footer-lang-en"
+            onclick="switchLanguage('en')"
+          />
+          <img
+            src="images/bg-logo.png"
+            alt="Български"
+            id="footer-lang-bg"
+            onclick="switchLanguage('bg')"
+          />
+          <img
+            src="images/de-logo.png"
+            alt="Deutsch"
+            id="footer-lang-de"
+            onclick="switchLanguage('de')"
+          />
         </section>
       </section>
       <h4 data-i18n="copyright">
-        Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени.
+        Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички
+        права запазени.
       </h4>
     </footer>
     <script>
@@ -100,15 +146,20 @@
           ivana_name: "Ivana Likova",
           student: "Student",
           about_me: "About me:",
-          ivana_desc1: 'A student at Language school "Acad. Lyudmil Stoyanov" Blagoevgrad.',
-          ivana_desc2: "I am interested in visual arts (Web Design), programming, swimming, singing, skiing, cooking.",
+          ivana_desc1:
+            'A student at Language school "Acad. Lyudmil Stoyanov" Blagoevgrad.',
+          ivana_desc2:
+            "I am interested in visual arts (Web Design), programming, swimming, singing, skiing, cooking.",
           ivan_name: "Ivan Dokolyakov",
-          ivan_desc1: 'A student at Language school "Acad. Lyudmil Stoyanov" Blagoevgrad.',
-          ivan_desc2: "I have a strong interest in cybersecurity, particularly threat detection, as well as table tennis, cooking, health, and self-improvement.",
+          ivan_desc1:
+            'A student at Language school "Acad. Lyudmil Stoyanov" Blagoevgrad.',
+          ivan_desc2:
+            "I have a strong interest in cybersecurity, particularly threat detection, as well as table tennis, cooking, health, and self-improvement.",
           terms_of_use: "TERMS OF USE",
           privacy_policy: "PRIVACY POLICY",
           site_map: "SITE MAP",
-          copyright: "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved."
+          copyright:
+            "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.",
         },
         bg: {
           page_title: "За нас",
@@ -121,15 +172,20 @@
           ivana_name: "Ивана Ликова",
           student: "Ученик",
           about_me: "За мен:",
-          ivana_desc1: "Ученичка в Езикова гимназия „Акад. Людмил Стоянов“ в Благоевград.",
-          ivana_desc2: "Интересувам се от визуални изкуства (уеб дизайн), програмиране, плуване, пеене, ски, готвене.",
+          ivana_desc1:
+            "Ученичка в Езикова гимназия „Акад. Людмил Стоянов“ в Благоевград.",
+          ivana_desc2:
+            "Интересувам се от визуални изкуства (уеб дизайн), програмиране, плуване, пеене, ски, готвене.",
           ivan_name: "Иван Доколяков",
-          ivan_desc1: "Ученик в езиково училище „Акад. Людмил Стоянов“ в Благоевград.",
-          ivan_desc2: "Имам силен интерес към киберсигурността, по-специално към откриването на заплахи, както и към тенис на маса, готвене, здраве и самоусъвършенстване.",
+          ivan_desc1:
+            "Ученик в езиково училище „Акад. Людмил Стоянов“ в Благоевград.",
+          ivan_desc2:
+            "Имам силен интерес към киберсигурността, по-специално към откриването на заплахи, както и към тенис на маса, готвене, здраве и самоусъвършенстване.",
           terms_of_use: "УСЛОВИЯ ЗА ПОЛЗВАНЕ",
           privacy_policy: "ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ",
           site_map: "КАРТА НА САЙТА",
-          copyright: "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
+          copyright:
+            "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени.",
         },
         de: {
           page_title: "Über uns",
@@ -142,36 +198,54 @@
           ivana_name: "Ivana Likova",
           student: "Schüler",
           about_me: "Über mich:",
-          ivana_desc1: "Schülerin an der Sprachschule „Acad. Lyudmil Stoyanov“ Blagoevgrad.",
-          ivana_desc2: "Ich interessiere mich für visuelle Künste (Webdesign), Programmierung, Schwimmen, Singen, Skifahren, Kochen.",
+          ivana_desc1:
+            "Schülerin an der Sprachschule „Acad. Lyudmil Stoyanov“ Blagoevgrad.",
+          ivana_desc2:
+            "Ich interessiere mich für visuelle Künste (Webdesign), Programmierung, Schwimmen, Singen, Skifahren, Kochen.",
           ivan_name: "Ivan Dokolyakov",
-          ivan_desc1: "Schüler an der Sprachschule „Acad. Lyudmil Stoyanov“ Blagoevgrad.",
-          ivan_desc2: "Ich habe großes Interesse an Cybersicherheit, insbesondere an Bedrohungserkennung, sowie an Tischtennis, Kochen, Gesundheit und Selbstverbesserung.",
+          ivan_desc1:
+            "Schüler an der Sprachschule „Acad. Lyudmil Stoyanov“ Blagoevgrad.",
+          ivan_desc2:
+            "Ich habe großes Interesse an Cybersicherheit, insbesondere an Bedrohungserkennung, sowie an Tischtennis, Kochen, Gesundheit und Selbstverbesserung.",
           terms_of_use: "NUTZUNGSBEDINGUNGEN",
           privacy_policy: "DATENSCHUTZRICHTLINIE",
           site_map: "SEITENÜBERICHT",
-          copyright: "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
-        }
+          copyright:
+            "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten.",
+        },
       };
       function switchLanguage(lang) {
         const elements = document.querySelectorAll("[data-i18n]");
-        elements.forEach(el => {
+        elements.forEach((el) => {
           const key = el.getAttribute("data-i18n");
           if (translations[lang] && translations[lang][key]) {
             el.textContent = translations[lang][key];
           }
-        });  
+        });
         document.title = translations[lang].page_title;
       }
       document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("lang-en").addEventListener("click", () => switchLanguage("en"));
-        document.getElementById("lang-bg").addEventListener("click", () => switchLanguage("bg"));
-        document.getElementById("lang-de").addEventListener("click", () => switchLanguage("de"));
-        document.getElementById("footer-lang-en").addEventListener("click", () => switchLanguage("en"));
-        document.getElementById("footer-lang-bg").addEventListener("click", () => switchLanguage("bg"));
-        document.getElementById("footer-lang-de").addEventListener("click", () => switchLanguage("de"));
+        document
+          .getElementById("lang-en")
+          .addEventListener("click", () => switchLanguage("en"));
+        document
+          .getElementById("lang-bg")
+          .addEventListener("click", () => switchLanguage("bg"));
+        document
+          .getElementById("lang-de")
+          .addEventListener("click", () => switchLanguage("de"));
+        document
+          .getElementById("footer-lang-en")
+          .addEventListener("click", () => switchLanguage("en"));
+        document
+          .getElementById("footer-lang-bg")
+          .addEventListener("click", () => switchLanguage("bg"));
+        document
+          .getElementById("footer-lang-de")
+          .addEventListener("click", () => switchLanguage("de"));
         switchLanguage("en");
       });
     </script>
+    <script src="./js/toggleMenu.js"></script>
   </body>
 </html>

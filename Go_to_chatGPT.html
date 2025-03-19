@@ -1,236 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="page_title">AI Чатбот</title>
     <link rel="stylesheet" href="css/style.css" />
 
-
     <!-- You can keep chat styles in style.css or inline -->
     <style>
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-            color: white;
-        }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+      }
 
-        #chat-box {
-            width: 80%;
-            max-width: 600px;
-            height: 400px;
-            margin: auto;
-            border: 2px solid #ccc;
-            background: white;
-            padding: 10px;
-            overflow-y: scroll;
-            display: flex;
-            flex-direction: column;
-            border-radius: 10px;
-        }
+      #chat-box {
+        width: 80%;
+        max-width: 600px;
+        height: 400px;
+        margin: auto;
+        border: 2px solid #ccc;
+        background: white;
+        padding: 10px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+      }
 
-        .chat-message {
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 10px;
-            max-width: 75%;
-        }
+      .chat-message {
+        padding: 8px 12px;
+        margin: 5px;
+        border-radius: 10px;
+        max-width: 75%;
+      }
 
-        .user {
-            background: #007bff;
-            color: white;
-            align-self: flex-end;
-        }
+      .user {
+        background: #007bff;
+        color: white;
+        align-self: flex-end;
+      }
 
-        .bot {
-            background: #f1f1f1;
-            align-self: flex-start;
-        }
+      .bot {
+        background: #f1f1f1;
+        align-self: flex-start;
+      }
 
-        .chat-input-container {
-            width: 80%;
-            max-width: 600px;
-            margin: auto;
-            display: flex;
-            gap: 10px;
-            padding: 10px;
-        }
+      .chat-input-container {
+        width: 80%;
+        max-width: 600px;
+        margin: auto;
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+      }
 
-        input {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+      input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
 
-        button {
-            padding: 10px 15px;
-            border: none;
-            background: #007bff;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+      button {
+        padding: 10px 15px;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-        button:hover {
-            background: #0056b3;
-        }
+      button:hover {
+        background: #0056b3;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html"></a><img src="images/logo.png" alt="AI Logo">
-                <span data-i18n="logo_text">Изкуствен интелект в киберсигурността</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav_home">Начало</a></li>
-                <li><a href="App.html" data-i18n="nav_applications">Приложения</a></li>
-                <li><a href="Risks.html" data-i18n="nav_risks">Рискове</a></li>
-                <li><a href="About_us.html" data-i18n="nav_about">За нас</a></li>
-                <li><a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Отиди към ChatGPT</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="AI Logo" />
+          <span data-i18n="logo_text"
+            >Изкуствен интелект в киберсигурността</span
+          >
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Начало</a></li>
+          <li>
+            <a href="App.html" data-i18n="nav_applications">Приложения</a>
+          </li>
+          <li><a href="Risks.html" data-i18n="nav_risks">Рискове</a></li>
+          <li><a href="About_us.html" data-i18n="nav_about">За нас</a></li>
+          <li>
+            <a
+              href="Go_to_chatGPT.html"
+              class="cta-button"
+              data-i18n="nav_chatgpt"
+              >Отиди към chatGPT</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <h1 data-i18n="main_title">AI Чатбот</h1>
-        <div id="chat-box">
-            <!-- Bot welcome message -->
-            <div class="chat-message bot" data-i18n="chat_welcome">
-                Здравейте! Как мога да ви помогна?
-            </div>
+    <main class="main-content">
+      <h1 data-i18n="main_title">AI Чатбот</h1>
+      <div id="chat-box">
+       
+        <div class="chat-message bot" data-i18n="chat_welcome">
+          Здравейте! Как мога да ви помогна?
         </div>
-        <div class="chat-input-container">
-            <!-- IMPORTANT: Add onclick to button -->
-            <input type="text" id="user-input" data-i18n-placeholder="chat_input_placeholder"
-                placeholder="Type a message..." />
-            <button data-i18n="button_send" onclick="sendMessage()">Изпрати</button>
-        </div>
+      </div>
+      <div class="chat-input-container">
+        
+        <input
+          type="text"
+          id="user-input"
+          data-i18n-placeholder="chat_input_placeholder"
+          placeholder="Type a message..."
+        />
+        <button data-i18n="button_send" onclick="sendMessage()">Изпрати</button>
+      </div>
     </main>
 
-    <footer>
-        <section class="items-wrap">
-            <section class="links-wrap">
-                <a href="https://github.com/Ivana390/AI-into-cybersecurity">
-                    <img src="images/git-logo.png" alt="GitHub" />
-                </a>
-                <a href="https://discord.com/channels/@me">
-                    <img src="images/discord.png" alt="Discord" />
-                </a>
-            </section>
-            <section class="links-wrap">
-                <h3 data-i18n="terms_of_use">УСЛОВИЯ ЗА ПОЛЗВАНЕ</h3>
-                <h3 data-i18n="privacy_policy">ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ</h3>
-                <h3 data-i18n="site_map">КАРТА НА САЙТА</h3>
-            </section>
-            <section class="links-wrap">
-                <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')" />
-                <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')" />
-                <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')" />
-            </section>
+    <footer class="footer-content">
+      <section class="items-wrap">
+        <section class="links-wrap">
+          <a href="https://github.com/Ivana390/AI-into-cybersecurity">
+            <img src="images/git-logo.png" alt="GitHub" />
+          </a>
+          <a href="https://discord.com/channels/@me">
+            <img src="images/discord.png" alt="Discord" />
+          </a>
         </section>
-        <h4 data-i18n="copyright">
-            Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени.
-        </h4>
+        <section class="links-wrap">
+          <h3 data-i18n="terms_of_use">УСЛОВИЯ ЗА ПОЛЗВАНЕ</h3>
+          <h3 data-i18n="privacy_policy">ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ</h3>
+          <h3 data-i18n="site_map">КАРТА НА САЙТА</h3>
+        </section>
+        <section class="links-wrap">
+          <img
+            src="images/en-logo.png"
+            alt="English"
+            id="footer-lang-en"
+            onclick="switchLanguage('en')"
+          />
+          <img
+            src="images/bg-logo.png"
+            alt="Български"
+            id="footer-lang-bg"
+            onclick="switchLanguage('bg')"
+          />
+          <img
+            src="images/de-logo.png"
+            alt="Deutsch"
+            id="footer-lang-de"
+            onclick="switchLanguage('de')"
+          />
+        </section>
+      </section>
+      <h4 data-i18n="copyright">
+        Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички
+        права запазени.
+      </h4>
     </footer>
 
-    <!-- OpenAI key config and chatbot script -->
+    
     <script src="js/config.js"></script>
     <script src="js/script.js"></script>
     <script>
-        const translations = {
-            en: {
-                page_title: "AI Chatbot",
-                logo_text: "AI into cybersecurity",
-                nav_home: "Home",
-                nav_applications: "Applications",
-                nav_risks: "Risks",
-                nav_about: "About us",
-                nav_chatgpt: "Go to ChatGPT",
-                main_title: "AI Chatbot",
-                chat_welcome: "Hello! How can I assist you?",
-                chat_input_placeholder: "Type a message...",
-                button_send: "Send",
-                terms_of_use: "TERMS OF USE",
-                privacy_policy: "PRIVACY POLICY",
-                site_map: "SITE MAP",
-                home_text: "This is the home page. Please choose from the navbar above.",
-                copyright:
-                    "Copyright © 2025 AI into Cybersecurity. All rights reserved."
-            },
-            bg: {
-                page_title: "AI Чатбот",
-                logo_text: "Изкуствен интелект в киберсигурността",
-                nav_home: "Начало",
-                nav_applications: "Приложения",
-                nav_risks: "Рискове",
-                nav_about: "За нас",
-                nav_chatgpt: "Отиди към ChatGPT",
-                main_title: "AI Чатбот",
-                chat_welcome: "Здравейте! Как мога да ви помогна?",
-                chat_input_placeholder: "Въведете съобщение...",
-                button_send: "Изпрати",
-                terms_of_use: "УСЛОВИЯ ЗА ПОЛЗВАНЕ",
-                privacy_policy: "ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ",
-                site_map: "КАРТА НА САЙТА",
-                home_text: "Това е началната страница. Изберете от навигационното меню горе.",
-                copyright:
-                    "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
-            },
-            de: {
-                page_title: "KI Chatbot",
-                logo_text: "KI in der Cybersicherheit",
-                nav_home: "Startseite",
-                nav_applications: "Anwendungen",
-                nav_risks: "Risiken",
-                nav_about: "Über uns",
-                nav_chatgpt: "Zu ChatGPT gehen",
-                main_title: "KI Chatbot",
-                chat_welcome: "Hallo! Wie kann ich Ihnen helfen?",
-                chat_input_placeholder: "Nachricht eingeben...",
-                button_send: "Senden",
-                terms_of_use: "NUTZUNGSBEDINGUNGEN",
-                privacy_policy: "DATENSCHUTZRICHTLINIE",
-                site_map: "SEITENÜBERICHT",
-                home_text: "Dies ist die Startseite. Bitte oben im Menü auswählen.",
-                copyright:
-                    "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
-            }
-        };
+      const translations = {
+        en: {
+          page_title: "AI Chatbot",
+          logo_text: "AI into cybersecurity",
+          nav_home: "Home",
+          nav_applications: "Applications",
+          nav_risks: "Risks",
+          nav_about: "About us",
+          nav_chatgpt: "Go to ChatGPT",
+          main_title: "AI Chatbot",
+          chat_welcome: "Hello! How can I assist you?",
+          chat_input_placeholder: "Type a message...",
+          button_send: "Send",
+          terms_of_use: "TERMS OF USE",
+          privacy_policy: "PRIVACY POLICY",
+          site_map: "SITE MAP",
+          home_text:
+            "This is the home page. Please choose from the navbar above.",
+          copyright:
+            "Copyright © 2025 AI into Cybersecurity. All rights reserved.",
+        },
+        bg: {
+          page_title: "AI Чатбот",
+          logo_text: "Изкуствен интелект в киберсигурността",
+          nav_home: "Начало",
+          nav_applications: "Приложения",
+          nav_risks: "Рискове",
+          nav_about: "За нас",
+          nav_chatgpt: "Отиди към ChatGPT",
+          main_title: "AI Чатбот",
+          chat_welcome: "Здравейте! Как мога да ви помогна?",
+          chat_input_placeholder: "Въведете съобщение...",
+          button_send: "Изпрати",
+          terms_of_use: "УСЛОВИЯ ЗА ПОЛЗВАНЕ",
+          privacy_policy: "ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ",
+          site_map: "КАРТА НА САЙТА",
+          home_text:
+            "Това е началната страница. Изберете от навигационното меню горе.",
+          copyright:
+            "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени.",
+        },
+        de: {
+          page_title: "KI Chatbot",
+          logo_text: "KI in der Cybersicherheit",
+          nav_home: "Startseite",
+          nav_applications: "Anwendungen",
+          nav_risks: "Risiken",
+          nav_about: "Über uns",
+          nav_chatgpt: "Zu ChatGPT gehen",
+          main_title: "KI Chatbot",
+          chat_welcome: "Hallo! Wie kann ich Ihnen helfen?",
+          chat_input_placeholder: "Nachricht eingeben...",
+          button_send: "Senden",
+          terms_of_use: "NUTZUNGSBEDINGUNGEN",
+          privacy_policy: "DATENSCHUTZRICHTLINIE",
+          site_map: "SEITENÜBERICHT",
+          home_text: "Dies ist die Startseite. Bitte oben im Menü auswählen.",
+          copyright:
+            "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten.",
+        },
+      };
 
-        /** Switches language by replacing text in data-i18n elements. */
-        function switchLanguage(lang) {
-            const elements = document.querySelectorAll("[data-i18n]");
-            elements.forEach(el => {
-                const key = el.getAttribute("data-i18n");
-                if (translations[lang] && translations[lang][key]) {
-                    el.innerHTML = translations[lang][key];
-                }
-            });
-
-            // Update <title>
-            document.title = translations[lang].page_title || document.title;
-
-            // Update placeholders
-            const inputPlaceholderElems = document.querySelectorAll("[data-i18n-placeholder]");
-            inputPlaceholderElems.forEach(inputElem => {
-                const placeholderKey = inputElem.getAttribute("data-i18n-placeholder");
-                if (translations[lang] && translations[lang][placeholderKey]) {
-                    inputElem.placeholder = translations[lang][placeholderKey];
-                }
-            });
-        }
-
-        // Set default language to "en" on load
-        document.addEventListener("DOMContentLoaded", () => {
-            switchLanguage("en");
+      
+      function switchLanguage(lang) {
+        const elements = document.querySelectorAll("[data-i18n]");
+        elements.forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang] && translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
         });
 
-    </script>
-</body>
+        document.title = translations[lang].page_title || document.title;
 
+        
+        const inputPlaceholderElems = document.querySelectorAll(
+          "[data-i18n-placeholder]"
+        );
+        inputPlaceholderElems.forEach((inputElem) => {
+          const placeholderKey = inputElem.getAttribute(
+            "data-i18n-placeholder"
+          );
+          if (translations[lang] && translations[lang][placeholderKey]) {
+            inputElem.placeholder = translations[lang][placeholderKey];
+          }
+        });
+      }
+
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        switchLanguage("en");
+      });
+    </script>
+    <script src="./js/toggleMenu.js"></script>
+  </body>
 </html>

@@ -12,29 +12,47 @@
       <nav class="navbar">
         <a href="index.html" class="logo">
           <img src="images/logo.png" alt="AI Logo" />
-          <span data-i18n="logo_text">AI into cybersecurity</span>
+          <span data-i18n="logo_text"
+            >Изкуствен интелект в киберсигурността</span
+          >
         </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <ul class="nav-links">
-          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-          <li><a href="App.html" data-i18n="nav_applications">Applications</a></li>
-          <li><a href="Risks.html" data-i18n="nav_risks">Risks</a></li>
-          <li><a href="About_us.html" data-i18n="nav_about">About us</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Начало</a></li>
           <li>
-            <a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Go to chatGPT</a>
+            <a href="App.html" data-i18n="nav_applications">Приложения</a>
+          </li>
+          <li><a href="Risks.html" data-i18n="nav_risks">Рискове</a></li>
+          <li><a href="About_us.html" data-i18n="nav_about">За нас</a></li>
+          <li>
+            <a
+              href="Go_to_chatGPT.html"
+              class="cta-button"
+              data-i18n="nav_chatgpt"
+              >Отиди към chatGPT</a
+            >
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-content">
       <h1 data-i18n="page_title">Risks</h1>
       <section class="risks-items">
         <a href="Adversarial Attacks & AI Manipulation.html">
           <img src="images/risks_1.webp" alt="Adversarial Attacks" />
-          <p data-i18n="risk_adversarial">Adversarial Attacks & AI Manipulation</p>
+          <p data-i18n="risk_adversarial">
+            Adversarial Attacks & AI Manipulation
+          </p>
         </a>
         <a href="Overreliance on AI & Automation Failures.html">
           <img src="images/risks_2.webp" alt="Overreliance on AI" />
-          <p data-i18n="risk_overreliance">Overreliance on AI & Automation Failures</p>
+          <p data-i18n="risk_overreliance">
+            Overreliance on AI & Automation Failures
+          </p>
         </a>
         <a href="Privacy Violations & Ethical Concerns.html">
           <img src="images/risks_3.webp" alt="Privacy Violations" />
@@ -42,7 +60,7 @@
         </a>
       </section>
     </main>
-    <footer>
+    <footer class="footer-content">
       <section class="items-wrap">
         <section class="links-wrap">
           <a href="https://github.com/Ivana390/AI-into-cybersecurity">
@@ -58,81 +76,101 @@
           <h3 data-i18n="site_map">КАРТА НА САЙТА</h3>
         </section>
         <section class="links-wrap">
-          <img src="images/en-logo.png" alt="English" id="footer-lang-en" onclick="switchLanguage('en')" />
-          <img src="images/bg-logo.png" alt="Български" id="footer-lang-bg" onclick="switchLanguage('bg')" />
-          <img src="images/de-logo.png" alt="Deutsch" id="footer-lang-de" onclick="switchLanguage('de')" />
+          <img
+            src="images/en-logo.png"
+            alt="English"
+            id="footer-lang-en"
+            onclick="switchLanguage('en')"
+          />
+          <img
+            src="images/bg-logo.png"
+            alt="Български"
+            id="footer-lang-bg"
+            onclick="switchLanguage('bg')"
+          />
+          <img
+            src="images/de-logo.png"
+            alt="Deutsch"
+            id="footer-lang-de"
+            onclick="switchLanguage('de')"
+          />
         </section>
       </section>
       <h4 data-i18n="copyright">
-        Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени.
+        Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички
+        права запазени.
       </h4>
     </footer>
     <script>
-const translations = {
-  en: {
-    page_title: "Risks",
-    logo_text: "AI into cybersecurity",
-    nav_home: "Home",
-    nav_applications: "Applications",
-    nav_risks: "Risks",
-    nav_about: "About us",
-    nav_chatgpt: "Go to chatGPT",
-    risk_adversarial: "Adversarial Attacks & AI Manipulation",
-    risk_overreliance: "Overreliance on AI & Automation Failures",
-    risk_privacy: "Privacy Violations & Ethical Concerns",
-    terms_of_use: "TERMS OF USE",
-    privacy_policy: "PRIVACY POLICY",
-    site_map: "SITE MAP",
-    copyright:"Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved."
-  },
-  bg: {
-    page_title: "Рискове",
-    logo_text: "Изкуствен интелект в киберсигурността",
-    nav_home: "Начало",
-    nav_applications: "Приложения",
-    nav_risks: "Рискове",
-    nav_about: "За нас",
-    nav_chatgpt: "Отиди към chatGPT",
-    risk_adversarial: "Противникови атаки и манипулация с AI",
-    risk_overreliance: "Прекомерна зависимост от AI и неуспехи на автоматизацията",
-    risk_privacy: "Нарушения на поверителността и етични въпроси",
-    terms_of_use: "УСЛОВИЯ ЗА ПОЛЗВАНЕ",
-    privacy_policy: "ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ",
-    site_map: "КАРТА НА САЙТА",
-    copyright:
-      "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени."
-  },
-  de: {
-    page_title: "Risiken",
-    logo_text: "KI in der Cybersicherheit",
-    nav_home: "Startseite",
-    nav_applications: "Anwendungen",
-    nav_risks: "Risiken",
-    nav_about: "Über uns",
-    nav_chatgpt: "Zu chatGPT gehen",
-    risk_adversarial: "Adversariale Angriffe & KI-Manipulation",
-    risk_overreliance: "Übermäßige Abhängigkeit von KI & Automatisierungsfehler",
-    risk_privacy: "Datenschutzverletzungen & ethische Bedenken",
-    terms_of_use: "NUTZUNGSBEDINGUNGEN",
-    privacy_policy: "DATENSCHUTZRICHTLINIE",
-    site_map: "SEITENÜBERICHT",
-    copyright:
-      "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten."
-  }
-};
-function switchLanguage(lang) {
-  const elements = document.querySelectorAll("[data-i18n]");
-  elements.forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (translations[lang] && translations[lang][key]) {
-      el.innerHTML = translations[lang][key];
-    }
-  });
-  document.title = translations[lang].page_title;
-}
-document.addEventListener("DOMContentLoaded", () => {
-  switchLanguage("en");
-});
+      const translations = {
+        en: {
+          page_title: "Risks",
+          logo_text: "AI into cybersecurity",
+          nav_home: "Home",
+          nav_applications: "Applications",
+          nav_risks: "Risks",
+          nav_about: "About us",
+          nav_chatgpt: "Go to chatGPT",
+          risk_adversarial: "Adversarial Attacks & AI Manipulation",
+          risk_overreliance: "Overreliance on AI & Automation Failures",
+          risk_privacy: "Privacy Violations & Ethical Concerns",
+          terms_of_use: "TERMS OF USE",
+          privacy_policy: "PRIVACY POLICY",
+          site_map: "SITE MAP",
+          copyright:
+            "Copyright © 2025 Artificial intelligence (AI) into cybersecurity. All rights reserved.",
+        },
+        bg: {
+          page_title: "Рискове",
+          logo_text: "Изкуствен интелект в киберсигурността",
+          nav_home: "Начало",
+          nav_applications: "Приложения",
+          nav_risks: "Рискове",
+          nav_about: "За нас",
+          nav_chatgpt: "Отиди към chatGPT",
+          risk_adversarial: "Противникови атаки и манипулация с AI",
+          risk_overreliance:
+            "Прекомерна зависимост от AI и неуспехи на автоматизацията",
+          risk_privacy: "Нарушения на поверителността и етични въпроси",
+          terms_of_use: "УСЛОВИЯ ЗА ПОЛЗВАНЕ",
+          privacy_policy: "ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ",
+          site_map: "КАРТА НА САЙТА",
+          copyright:
+            "Авторско право © 2025 Изкуствен интелект (AI) в киберсигурността. Всички права запазени.",
+        },
+        de: {
+          page_title: "Risiken",
+          logo_text: "KI in der Cybersicherheit",
+          nav_home: "Startseite",
+          nav_applications: "Anwendungen",
+          nav_risks: "Risiken",
+          nav_about: "Über uns",
+          nav_chatgpt: "Zu chatGPT gehen",
+          risk_adversarial: "Adversariale Angriffe & KI-Manipulation",
+          risk_overreliance:
+            "Übermäßige Abhängigkeit von KI & Automatisierungsfehler",
+          risk_privacy: "Datenschutzverletzungen & ethische Bedenken",
+          terms_of_use: "NUTZUNGSBEDINGUNGEN",
+          privacy_policy: "DATENSCHUTZRICHTLINIE",
+          site_map: "SEITENÜBERICHT",
+          copyright:
+            "Urheberrecht © 2025 Künstliche Intelligenz (KI) in der Cybersicherheit. Alle Rechte vorbehalten.",
+        },
+      };
+      function switchLanguage(lang) {
+        const elements = document.querySelectorAll("[data-i18n]");
+        elements.forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang] && translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
+        });
+        document.title = translations[lang].page_title;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        switchLanguage("en");
+      });
     </script>
+    <script src="./js/toggleMenu.js"></script>
   </body>
 </html>

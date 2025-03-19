@@ -8,22 +8,37 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <img src="images/logo.png" alt="AI Logo" />
-          <span data-i18n="logo_text">Изкуствен интелект в киберсигурността</span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="index.html" data-i18n="nav_home">Начало</a></li>
-          <li><a href="App.html" data-i18n="nav_applications">Приложения</a></li>
-          <li><a href="Risks.html" data-i18n="nav_risks">Рискове</a></li>
-          <li><a href="About_us.html" data-i18n="nav_about">За нас</a></li>
-          <li>
-            <a href="Go_to_chatGPT.html" class="cta-button" data-i18n="nav_chatgpt">Отиди към chatGPT</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="AI Logo" />
+            <span data-i18n="logo_text"
+              >Изкуствен интелект в киберсигурността</span
+            >
+          </a>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Начало</a></li>
+            <li>
+              <a href="App.html" data-i18n="nav_applications">Приложения</a>
+            </li>
+            <li><a href="Risks.html" data-i18n="nav_risks">Рискове</a></li>
+            <li><a href="About_us.html" data-i18n="nav_about">За нас</a></li>
+            <li>
+              <a
+                href="Go_to_chatGPT.html"
+                class="cta-button"
+                data-i18n="nav_chatgpt"
+                >Отиди към chatGPT</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main>
       <h1 data-i18n="page_title">Detection & Analysis</h1>
       <p data-i18n="para1">
@@ -149,5 +164,7 @@
         switchLanguage("en");
       });
     </script>
+        <script src="./js/toggleMenu.js"></script>
+
   </body>
 </html>
